@@ -1,0 +1,62 @@
+[
+ {
+  "grid": "coarse",
+  "ni": 160,
+  "nj": 80,
+  "alpha": 10,
+  "model": "kOmegaSST",
+  "Re": 6000000.0,
+  "cells": 12640,
+  "mesh_ok": false,
+  "Cd": 0.0164359229325,
+  "Cl": 1.087536383025,
+  "CmPitch": 0.0003796243582325,
+  "Cl_std": 2.231926741852412e-05,
+  "iterations": 10000
+ },
+ {
+  "grid": "medium",
+  "ni": 240,
+  "nj": 120,
+  "alpha": 10,
+  "model": "kOmegaSST",
+  "Re": 6000000.0,
+  "cells": 28560,
+  "mesh_ok": false,
+  "Cd": 0.013668059662250001,
+  "Cl": 1.0943846204,
+  "CmPitch": 0.0007661632528249999,
+  "Cl_std": 4.769423376041541e-06,
+  "iterations": 10000
+ },
+ {
+  "grid": "fine",
+  "ni": 320,
+  "nj": 160,
+  "alpha": 10,
+  "model": "kOmegaSST",
+  "Re": 6000000.0,
+  "cells": 50880,
+  "mesh_ok": false,
+  "Cd": 0.012934960118499999,
+  "Cl": 1.097034420275,
+  "CmPitch": 0.00075315726365,
+  "Cl_std": 5.496318534928521e-07,
+  "iterations": 10000
+ },
+ {
+  "grid": "extra-fine",
+  "ni": 480,
+  "nj": 240,
+  "alpha": 10,
+  "model": "kOmegaSST",
+  "Re": 6000000.0,
+  "cells": 114720,
+  "mesh_ok": false,
+  "Cd": 0.0124791441605,
+  "Cl": 1.0953509060000002,
+  "CmPitch": 0.0014637327831750003,
+  "Cl_std": 0.00010377974779069771,
+  "iterations": 10000
+ }
+]

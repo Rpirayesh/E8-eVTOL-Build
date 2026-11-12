@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E8-S Bill of Materials</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header><h1>E8-S lift + cruise demonstrator</h1>
+<nav><a href="index.html">3-D viewer</a><a href="analysis.html">Analysis &amp; validation</a><a href="bom.html" aria-current="page">Bill of materials</a><a href="https://github.com/Rpirayesh/E8-eVTOL-Build">Repository</a></nav></header>
+<main class="doc">
+  <h2>Purchased items and raw stock</h2>
+  <p>Prices are retail listings observed in November 2026 (USD); check stock and exact variant before ordering.
+  Download as <a href="https://github.com/Rpirayesh/E8-eVTOL-Build/blob/main/bom/BOM.csv">CSV</a>.</p>
+  <div id="total" class="kpis"></div>
+  <div class="wrap" id="buy"></div>
+  <h2>Parts you make</h2>
+  <p>Printed (FDM) and machined (CNC) parts. Click a name to see it in the 3-D viewer.</p>
+  <div class="wrap" id="make"></div>
+  <h2>Carbon tube cut list</h2>
+  <div class="wrap" id="cut"></div>
+</main>
+<script type="module">
+const d = await (await fetch('data/bom.json')).json();
+const money = x => '$' + Number(x).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const cats = {};
+d.rows.forEach(r => cats[r.category] = (cats[r.category] || 0) + r.total_usd);
+document.getElementById('total').innerHTML = `<div><b>${money(d.total_usd)}</b><span>total estimate</span></div>` +
+  Object.entries(cats).map(([k, v]) => `<div><b>${money(v)}</b><span>${k}</span></div>`).join('');
+const link = s => s.startsWith('http') ? `<a href="${s}">source</a>` : s;
+document.getElementById('buy').innerHTML = `<table><thead><tr><th>Category</th><th>Item</th><th>Qty</th><th>Unit price</th><th>Total</th><th>Notes</th><th></th></tr></thead><tbody>${
+  d.rows.map(r => `<tr><td>${r.category}</td><td>${r.item}</td><td>${r.qty} ${r.unit}</td><td>${money(r.unit_price_usd)}</td><td>${money(r.total_usd)}</td><td>${r.note}</td><td>${link(r.source)}</td></tr>`).join('')}</tbody></table>`;
+document.getElementById('make').innerHTML = `<table><thead><tr><th></th><th>ID</th><th>Part</th><th>Material</th><th>Qty</th><th>g each</th><th>Envelope mm</th><th>Files</th></tr></thead><tbody>${
+  d.made.map(p => `<tr><td><span class="b ${p.process}">${p.process}</span></td><td>${p.id}</td><td><a href="index.html?part=${p.id}">${p.name}</a></td><td>${p.material}</td><td>${p.qty}</td><td>${p.mass_g_each}</td><td>${p.size_mm.join(' × ')}</td><td>${p.files.stl ? `<a href="https://github.com/Rpirayesh/E8-eVTOL-Build/raw/main/${p.files.stl}">STL</a> · <a href="https://github.com/Rpirayesh/E8-eVTOL-Build/raw/main/${p.files.step}">STEP</a>` : ''}</td></tr>`).join('')}</tbody></table>`;
+document.getElementById('cut').innerHTML = `<table><thead><tr><th>Stock length</th><th>Part</th><th>Cut length mm</th></tr></thead><tbody>${
+  d.cut_list.map(c => `<tr><td>${c.stock}</td><td>${c.part} ${c.name}</td><td>${c.length_mm}</td></tr>`).join('')}</tbody></table>`;
+</script>
+</body>
+</html>

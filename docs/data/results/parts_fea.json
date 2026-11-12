@@ -1,0 +1,218 @@
+{
+ "NAC-U": {
+  "part": "Lift motor nacelle, upper (motor pedestal)",
+  "material": "PA6-CF (printed)",
+  "load_case": "Thrust 60 N + motor torque 1.30 N m (1.5 x bench maximum)",
+  "elements": 83579,
+  "vm_max_mpa": 0.5114206149787472,
+  "vm_p995_mpa": 0.23423712609098366,
+  "allowable_mpa": 25.0,
+  "MS": 105.72945154855326,
+  "max_disp_mm": 0.002066567918728027,
+  "applied_force_n": [
+   0.0012231589281297699,
+   -0.0006499064912051154,
+   60.300000000000026
+  ],
+  "reaction_n": [
+   -0.001223159,
+   0.0006499066,
+   -60.3
+  ],
+  "image": "analysis/fea/parts/NAC-U.png",
+  "glb": "models/fea/NAC-U.glb",
+  "allowable_note": "dry XY ~70 MPa; allowable includes layer-adhesion, moisture, creep and fatigue knock-downs"
+ },
+ "SAD-U": {
+  "part": "Boom saddle, upper half",
+  "material": "6061-T6",
+  "load_case": "Boom shear 241 N + boom moment 61 N m (ultimate)",
+  "elements": 60607,
+  "vm_max_mpa": 9.883950649252846,
+  "vm_p995_mpa": 6.265634184307685,
+  "allowable_mpa": 240.0,
+  "MS": 37.30418325427956,
+  "max_disp_mm": 0.0054626943840444045,
+  "applied_force_n": [
+   0.0,
+   0.0,
+   241.18295754695737
+  ],
+  "reaction_n": [
+   1.93765e-11,
+   -1.44737e-11,
+   -239.6853
+  ],
+  "image": "analysis/fea/parts/SAD-U.png",
+  "glb": "models/fea/SAD-U.glb",
+  "allowable_note": "yield 276 MPa; allowable = 0.87 x yield"
+ },
+ "RIB-B": {
+  "part": "Boom rib (wing-boom load fitting)",
+  "material": "6061-T6",
+  "load_case": "Bolt loads 881 / -640 N from the saddle (ultimate)",
+  "elements": 20983,
+  "vm_max_mpa": 231.2849349267883,
+  "vm_p995_mpa": 108.79445836280476,
+  "allowable_mpa": 240.0,
+  "MS": 1.2059947134407767,
+  "max_disp_mm": 0.9420638569781361,
+  "applied_force_n": [
+   0.0,
+   0.0,
+   241.19999999999902
+  ],
+  "reaction_n": [
+   7.719541e-10,
+   -2.486596e-10,
+   -241.2
+  ],
+  "image": "analysis/fea/parts/RIB-B.png",
+  "glb": "models/fea/RIB-B.glb",
+  "allowable_note": "yield 276 MPa; allowable = 0.87 x yield"
+ },
+ "SAD-L": {
+  "part": "Boom saddle, lower cap",
+  "material": "PA6-CF (printed)",
+  "load_case": "Boom inertia 118 N downward + half boom moment (ultimate)",
+  "elements": 43363,
+  "vm_max_mpa": 5.142509934097064,
+  "vm_p995_mpa": 2.0961409765511636,
+  "allowable_mpa": 25.0,
+  "MS": 10.926678729945523,
+  "max_disp_mm": 0.015690380269396228,
+  "applied_force_n": [
+   0.0,
+   0.0,
+   -365.9022568435431
+  ],
+  "reaction_n": [
+   1.816259e-12,
+   2.199035e-12,
+   365.9023
+  ],
+  "image": "analysis/fea/parts/SAD-L.png",
+  "glb": "models/fea/SAD-L.glb",
+  "allowable_note": "dry XY ~70 MPa; allowable includes layer-adhesion, moisture, creep and fatigue knock-downs"
+ },
+ "LG-S": {
+  "part": "Landing leg socket, starboard",
+  "material": "PA6-CF (printed)",
+  "load_case": "Landing 467 N along the leg + 25 % drag (4 g on one boom, ultimate)",
+  "elements": 17654,
+  "vm_max_mpa": 6.274797222618991,
+  "vm_p995_mpa": 3.4619287874928273,
+  "allowable_mpa": 25.0,
+  "MS": 6.22140793026113,
+  "max_disp_mm": 0.036315292060151466,
+  "applied_force_n": [
+   116.72972964474918,
+   -81.0796193294563,
+   459.82537104467065
+  ],
+  "reaction_n": [
+   -116.7297,
+   81.07962,
+   -459.8254
+  ],
+  "image": "analysis/fea/parts/LG-S.png",
+  "glb": "models/fea/LG-S.glb",
+  "allowable_note": "dry XY ~70 MPa; allowable includes layer-adhesion, moisture, creep and fatigue knock-downs"
+ },
+ "BH-3": {
+  "part": "Bulkhead 3 (main spar carry)",
+  "material": "Birch plywood",
+  "load_case": "Fuselage contents 262 N hung from the main spar (4 g landing, ultimate)",
+  "elements": 27392,
+  "vm_max_mpa": 22.258706172386773,
+  "vm_p995_mpa": 12.372587396193863,
+  "allowable_mpa": 25.0,
+  "MS": 1.0205959513117415,
+  "max_disp_mm": 0.803372283268786,
+  "applied_force_n": [
+   0.0,
+   0.0,
+   -261.74694155399976
+  ],
+  "reaction_n": [
+   3.071277e-11,
+   2.369216e-10,
+   261.7469
+  ],
+  "image": "analysis/fea/parts/BH-3.png",
+  "glb": "models/fea/BH-3.glb",
+  "allowable_note": "aircraft birch, bending ~60 MPa"
+ },
+ "FW": {
+  "part": "Pusher firewall plate",
+  "material": "6061-T6",
+  "load_case": "Pusher thrust 112 N + torque 3.2 N m (1.5 x bench maximum)",
+  "elements": 127648,
+  "vm_max_mpa": 38.48809622447899,
+  "vm_p995_mpa": 15.21578488624172,
+  "allowable_mpa": 240.0,
+  "MS": 14.773093652040957,
+  "max_disp_mm": 0.027482600015648936,
+  "applied_force_n": [
+   -112.23710924999992,
+   -1.2260073361006956e-05,
+   1.9230606976509985e-05
+  ],
+  "reaction_n": [
+   112.2371,
+   1.225998e-05,
+   -1.923052e-05
+  ],
+  "image": "analysis/fea/parts/FW.png",
+  "glb": "models/fea/FW.glb",
+  "allowable_note": "yield 276 MPa; allowable = 0.87 x yield"
+ },
+ "TB-S": {
+  "part": "Tail block, starboard",
+  "material": "PA6-CF (printed)",
+  "load_case": "Stab 74 N + fin 35 N at 35 m/s, CL 1.0 (ultimate)",
+  "elements": 142370,
+  "vm_max_mpa": 2.7267246443783395,
+  "vm_p995_mpa": 1.8879060854278813,
+  "allowable_mpa": 25.0,
+  "MS": 12.242184128207795,
+  "max_disp_mm": 0.08617288313143584,
+  "applied_force_n": [
+   0.0,
+   34.88953124999999,
+   74.2809374999992
+  ],
+  "reaction_n": [
+   3.96646e-12,
+   -34.88953,
+   -74.28094
+  ],
+  "image": "analysis/fea/parts/TB-S.png",
+  "glb": "models/fea/TB-S.glb",
+  "allowable_note": "dry XY ~70 MPa; allowable includes layer-adhesion, moisture, creep and fatigue knock-downs"
+ },
+ "SC-1": {
+  "part": "Spar cap (main spar)",
+  "material": "PA6-CF (printed)",
+  "load_case": "Spar retention 196 N (negative-g case, ultimate)",
+  "elements": 20241,
+  "vm_max_mpa": 3.192806895423253,
+  "vm_p995_mpa": 1.5606887756466115,
+  "allowable_mpa": 25.0,
+  "MS": 15.018568461634647,
+  "max_disp_mm": 0.009829880105825027,
+  "applied_force_n": [
+   0.0,
+   0.0,
+   -196.31020616550003
+  ],
+  "reaction_n": [
+   -6.792483e-13,
+   8.315015e-13,
+   196.3102
+  ],
+  "image": "analysis/fea/parts/SC-1.png",
+  "glb": "models/fea/SC-1.glb",
+  "allowable_note": "dry XY ~70 MPa; allowable includes layer-adhesion, moisture, creep and fatigue knock-downs"
+ }
+}

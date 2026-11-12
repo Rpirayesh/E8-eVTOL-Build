@@ -1,0 +1,168 @@
+{
+  "_note": "Purchased (COTS) components. Prices are retail listings observed in November 2026 in USD; confirm stock and variant before ordering. Masses are manufacturer values unless marked 'est'.",
+  "lift_motor": {
+    "name": "T-Motor Antigravity MN5008 KV170 (12S)",
+    "qty": 8,
+    "mass_kg": 0.135,
+    "price_usd": 89.99,
+    "spec": "24N28P, 12S, 6 mm shaft; bench 4.10 kg max with P18x6.1 at 47 V",
+    "source": "https://store.tmotor.com/goods.php?id=1000"
+  },
+  "lift_prop": {
+    "name": "T-Motor P18x6.1 carbon propeller (CW+CCW pair)",
+    "qty": 4,
+    "unit": "pair",
+    "mass_kg": 0.052,
+    "price_usd": 82.8,
+    "spec": "457 mm, matched to MN5008 bench data; mass per pair est.",
+    "source": "https://www.getfpv.com/tiger-18x6-1-carbon-fiber-props-pair.html"
+  },
+  "lift_esc": {
+    "name": "T-Motor FLAME 60A 12S ESC",
+    "qty": 8,
+    "mass_kg": 0.074,
+    "price_usd": 99.99,
+    "spec": "60 A continuous, 80 A peak (10 s), 6-12S, PWM",
+    "source": "https://irlock.com/products/t-motor-flame-60a-12s"
+  },
+  "cruise_motor": {
+    "name": "T-Motor AT4130 Long Shaft KV230 (12S)",
+    "qty": 1,
+    "mass_kg": 0.408,
+    "price_usd": 119.99,
+    "spec": "12S, 60 A peak (180 s), 60 mOhm; bench 7.63 kg static with APC 17x10 at 43.6 V",
+    "source": "https://store.tmotor.com/goods.php?id=828"
+  },
+  "cruise_prop": {
+    "name": "APC 17x10E pusher (17x10EP)",
+    "qty": 1,
+    "mass_kg": 0.075,
+    "price_usd": 18.5,
+    "spec": "432 mm thin electric pusher; forward-flight data from APC PER3_17x10E",
+    "source": "https://www.apcprop.com/product/17x10ep/"
+  },
+  "cruise_esc": {
+    "name": "T-Motor FLAME 80A 12S V2.0 ESC",
+    "qty": 1,
+    "mass_kg": 0.11,
+    "price_usd": 119.99,
+    "spec": "80 A continuous, 12S",
+    "source": "https://irlock.com/products/t-motor-flame-80a-12s-v2-0"
+  },
+  "battery_16000": {
+    "name": "Tattu 16000mAh 6S 15C LiPo",
+    "mass_kg": 1.88,
+    "price_usd": 249.0,
+    "capacity_ah": 16.0,
+    "cells": 6,
+    "c_cont": 15,
+    "source": "https://www.yangdaonline.com/gens-tattu-16000mah-15c-6s1p-high-voltage-lipo-battery-pack",
+    "_series_note": "Packs are used in series pairs to form a 12S string",
+    "dims_mm": [
+      202,
+      77.5,
+      64.5
+    ]
+  },
+  "battery_22000": {
+    "name": "Tattu 22000mAh 6S 25C LiPo",
+    "mass_kg": 2.43,
+    "price_usd": 349.0,
+    "capacity_ah": 22.0,
+    "cells": 6,
+    "c_cont": 25,
+    "source": "https://www.getfpv.com/tattu-22000mah-6s-25c-lipo-battery-5340.html",
+    "dims_mm": [
+      200,
+      91,
+      69
+    ],
+    "_dims_note": "approximate; confirm with the delivered pack"
+  },
+  "flight_controller": {
+    "name": "Holybro Pixhawk 6X Standard Set (v2B)",
+    "qty": 1,
+    "mass_kg": 0.105,
+    "price_usd": 347.99,
+    "spec": "Triple IMU, PX4/ArduPilot, includes PM02D power module and cables",
+    "source": "https://www.racedayquads.com/products/holybro-pixhawk-6x-fc-module-v2b-standard-set-icm-45686"
+  },
+  "gps": {
+    "name": "Holybro M10 GPS",
+    "qty": 1,
+    "mass_kg": 0.032,
+    "price_usd": 44.99,
+    "source": "https://holybro.com/collections/gps"
+  },
+  "airspeed": {
+    "name": "Holybro digital airspeed sensor (MS4525DO) with pitot",
+    "qty": 1,
+    "mass_kg": 0.02,
+    "price_usd": 49.99,
+    "source": "https://holybro.com/collections/sensors"
+  },
+  "power_sensor": {
+    "name": "Holybro PM08D power module (14S, 200 A)",
+    "qty": 1,
+    "mass_kg": 0.045,
+    "price_usd": 49.99,
+    "spec": "12S bus; hover current about 35-45 A",
+    "source": "https://holybro.com/collections/power-modules-pdbs"
+  },
+  "telemetry": {
+    "name": "Holybro SiK telemetry radio V3 (pair)",
+    "qty": 1,
+    "mass_kg": 0.03,
+    "price_usd": 58.99,
+    "source": "https://holybro.com/collections/telemetry-radios"
+  },
+  "receiver": {
+    "name": "ExpressLRS 2.4 GHz receiver (e.g. RadioMaster RP3)",
+    "qty": 1,
+    "mass_kg": 0.005,
+    "price_usd": 24.99,
+    "source": "https://www.radiomasterrc.com/"
+  },
+  "servo": {
+    "name": "Metal-gear digital servo, 25 g class (e.g. Savox SH-1290MG / KST X10)",
+    "qty": 5,
+    "mass_kg": 0.025,
+    "price_usd": 35.0,
+    "spec": "2 aileron, 1 elevator, 2 rudder",
+    "source": "https://www.savox-usa.com/"
+  },
+  "harness": {
+    "name": "Silicone wire 10/14 AWG, XT90-S, XT60, 4 mm bullets, PDB, fuse",
+    "qty": 1,
+    "mass_kg": 0.36,
+    "price_usd": 120.0,
+    "spec": "10 AWG main bus, 14 AWG motor leads, XT90-S, AS150 series link; mass est.",
+    "source": "various"
+  },
+  "boom_tube": {
+    "name": "Roll-wrapped 3K carbon tube 25 x 22 x 1000 mm",
+    "mass_kg_per_m": 0.17,
+    "price_usd": 32.0,
+    "spec": "E~70 GPa axial, density 1.55",
+    "source": "https://www.easycomposites.co.uk/25mm-roll-wrapped-carbon-fibre-tube-metric"
+  },
+  "spar_tube": {
+    "name": "Roll-wrapped 3K carbon tube 20 x 18 x 1000 mm",
+    "mass_kg_per_m": 0.093,
+    "price_usd": 24.0,
+    "source": "https://www.easycomposites.co.uk/"
+  },
+  "rear_spar_tube": {
+    "name": "Pultruded carbon tube 10 x 8 x 1000 mm",
+    "mass_kg_per_m": 0.028,
+    "price_usd": 9.0,
+    "source": "https://www.easycomposites.co.uk/"
+  },
+  "bec": {
+    "name": "Holybro UBEC 12S (5.3 V / 3 A) for servos",
+    "qty": 1,
+    "mass_kg": 0.02,
+    "price_usd": 24.99,
+    "source": "https://holybro.com/collections/power-modules-pdbs"
+  }
+}

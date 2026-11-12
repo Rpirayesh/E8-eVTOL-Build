@@ -1,0 +1,51 @@
+category,item,qty,unit,unit_price_usd,total_usd,source,note
+Propulsion,T-Motor Antigravity MN5008 KV170 (12S),8,pc,89.99,719.92,https://store.tmotor.com/goods.php?id=1000,"24N28P, 12S, 6 mm shaft; bench 4.10 kg max with P18x6.1 at 47 V"
+Propulsion,T-Motor P18x6.1 carbon propeller (CW+CCW pair),4,pair,82.8,331.2,https://www.getfpv.com/tiger-18x6-1-carbon-fiber-props-pair.html,4 CW + 4 CCW; buy 1 spare pair
+Propulsion,T-Motor FLAME 60A 12S ESC,8,pc,99.99,799.92,https://irlock.com/products/t-motor-flame-60a-12s,"60 A continuous, 80 A peak (10 s), 6-12S, PWM"
+Propulsion,T-Motor AT4130 Long Shaft KV230 (12S),1,pc,119.99,119.99,https://store.tmotor.com/goods.php?id=828,"12S, 60 A peak (180 s), 60 mOhm; bench 7.63 kg static with APC 17x10 at 43.6 V"
+Propulsion,APC 17x10E pusher (17x10EP),2,pc,18.5,37.0,https://www.apcprop.com/product/17x10ep/,1 + 1 spare
+Propulsion,T-Motor FLAME 80A 12S V2.0 ESC,1,pc,119.99,119.99,https://irlock.com/products/t-motor-flame-80a-12s-v2-0,"80 A continuous, 12S"
+Power,Tattu 22000mAh 6S 25C LiPo,2,pc,349.0,698.0,https://www.getfpv.com/tattu-22000mah-6s-25c-lipo-battery-5340.html,Two 6S packs in series = 12S 22 Ah; buy a second set for turnaround
+Avionics,Holybro Pixhawk 6X Standard Set (v2B),1,pc,347.99,347.99,https://www.racedayquads.com/products/holybro-pixhawk-6x-fc-module-v2b-standard-set-icm-45686,"Triple IMU, PX4/ArduPilot, includes PM02D power module and cables"
+Avionics,Holybro M10 GPS,1,pc,44.99,44.99,https://holybro.com/collections/gps,
+Avionics,Holybro digital airspeed sensor (MS4525DO) with pitot,1,pc,49.99,49.99,https://holybro.com/collections/sensors,
+Avionics,"Holybro PM08D power module (14S, 200 A)",1,pc,49.99,49.99,https://holybro.com/collections/power-modules-pdbs,12S bus; hover current about 35-45 A
+Avionics,Holybro SiK telemetry radio V3 (pair),1,pc,58.99,58.99,https://holybro.com/collections/telemetry-radios,
+Avionics,ExpressLRS 2.4 GHz receiver (e.g. RadioMaster RP3),1,pc,24.99,24.99,https://www.radiomasterrc.com/,
+Avionics,Holybro UBEC 12S (5.3 V / 3 A) for servos,1,pc,24.99,24.99,https://holybro.com/collections/power-modules-pdbs,
+Avionics,"Metal-gear digital servo, 25 g class (e.g. Savox SH-1290MG / KST X10)",5,pc,35.0,175.0,https://www.savox-usa.com/,"2 aileron, 1 elevator, 2 rudder"
+Power,"Silicone wire 10/14 AWG, XT90-S, XT60, 4 mm bullets, PDB, fuse",1,set,120.0,120.0,various,"10 AWG main bus, 14 AWG motor leads, XT90-S, AS150 series link; mass est."
+Power,12S LiPo balance charger (e.g. ISDT/ToolkitRC dual 6S) + LiPo safety bags,1,set,260.0,260.0,various,ground equipment
+Avionics,RC transmitter with ExpressLRS (e.g. RadioMaster TX16S / Boxer),1,pc,160.0,160.0,https://www.radiomasterrc.com/,skip if already owned
+Raw stock,"Roll-wrapped 3K carbon tube 30 x 27 mm, 2000 mm",5,length,58.0,290.0,https://www.easycomposites.co.uk/,5 lengths; see cut_list.csv
+Raw stock,"Roll-wrapped carbon tube 27 x 25 mm (joiners / sleeves), 1000 mm",1,length,26.0,26.0,https://www.easycomposites.co.uk/,1 lengths; see cut_list.csv
+Raw stock,"Pultruded/roll-wrapped carbon tube 12 x 10 mm, 2000 mm",3,length,22.0,66.0,https://www.easycomposites.co.uk/,3 lengths; see cut_list.csv
+Raw stock,"Pultruded carbon rod 10 mm, 1000 mm",1,length,14.0,14.0,https://www.easycomposites.co.uk/,1 lengths; see cut_list.csv
+Raw stock,"Pultruded carbon rod 6 mm, 1500 mm",1,length,9.0,9.0,https://www.easycomposites.co.uk/,1 lengths; see cut_list.csv
+Raw stock,"Pultruded carbon rod 4 mm (torque rods, fin spars), 1000 mm",2,length,4.0,8.0,https://www.easycomposites.co.uk/,2 lengths; see cut_list.csv
+Raw stock,"Pultruded carbon rod 3 mm (elevator torque rod), 1500 mm",1,length,4.0,4.0,https://www.easycomposites.co.uk/,1 lengths; see cut_list.csv
+Filament,ColorFabb LW-PLA 1.75 mm (LW-PLA (foamed)),3,spool,45.0,135.0,various,1.75 kg in parts; 35 % allowance
+Filament,Bambu PAHT-CF / Polymaker PA6-CF (PA6-CF),2,spool,70.0,140.0,various,1.23 kg in parts; 35 % allowance
+Filament,any PETG 1.75 mm (PETG),1,spool,22.0,22.0,various,0.19 kg in parts; 35 % allowance
+Filament,Bambu PETG-CF (PETG-CF),1,spool,35.0,35.0,various,0.12 kg in parts; 35 % allowance
+Filament,TPU 95A 1.75 mm (TPU 95A),1,spool,30.0,30.0,various,0.06 kg in parts; 35 % allowance
+CNC stock,"6061-T6 plate 6 mm, 350 x 150 mm (boom ribs)",1,pc,32.0,32.0,https://www.onlinemetals.com/,2 ribs
+CNC stock,"6061-T6 plate 3 mm, 120 x 120 mm (firewall)",1,pc,9.0,9.0,https://www.onlinemetals.com/,
+CNC stock,6061-T6 bar 50 x 30 x 340 mm (two saddles),1,pc,28.0,28.0,https://www.onlinemetals.com/,
+CNC stock,"Aircraft birch plywood 3 mm, 600 x 600 mm",2,sheet,24.0,48.0,various,"bulkheads 1, 2, 5, 6, tray, deck"
+CNC stock,"Aircraft birch plywood 6 mm, 300 x 300 mm",1,sheet,18.0,18.0,various,"bulkheads 3, 4 (wing carry)"
+Fasteners,M3 x 40 socket head + nyloc (nacelle clamps),32,pc,0.18,5.76,McMaster-Carr / Bossard,
+Fasteners,"M3 x 8 socket head, blue threadlocker (motor mounting)",40,pc,0.08,3.2,McMaster-Carr / Bossard,
+Fasteners,"M3 x 12 + nyloc (fuselage joints, 8 per joint)",48,pc,0.1,4.8,McMaster-Carr / Bossard,
+Fasteners,"M3 heat-set inserts (firewall boss, hatch, misc.)",30,pc,0.1,3.0,McMaster-Carr / Bossard,
+Fasteners,M4 x 45 socket head + washers + nyloc (saddle clamps),12,pc,0.25,3.0,McMaster-Carr / Bossard,
+Fasteners,M4 heat-set inserts + M4 x 16 (spar caps),4,pc,0.3,1.2,McMaster-Carr / Bossard,
+Fasteners,M5 x 60 socket head + nyloc (saddle-rib cross bolts),4,pc,0.4,1.6,McMaster-Carr / Bossard,
+Fasteners,"M3 x 30 + nyloc (tail blocks, leg sockets)",12,pc,0.15,1.8,McMaster-Carr / Bossard,
+Fasteners,Neodymium magnets 10 x 3 mm (nose cone),4,pc,0.3,1.2,McMaster-Carr / Bossard,
+Consumables,"Laminating epoxy 500 g + slow hardener (spar/boom bonding, glass centre section)",1,set,38.0,38.0,various,
+Consumables,Thick CA + activator,1,set,15.0,15.0,various,
+Consumables,"Glass cloth 80 g/m2, 1 m2 (optional centre-section stiffening)",1,set,12.0,12.0,various,
+Consumables,"Velcro battery straps 25 mm x 4, anti-slip mat",1,set,18.0,18.0,various,
+Consumables,"Servo extensions, Y-leads",1,set,20.0,20.0,various,
+Consumables,"Heat-shrink, cable ties, spiral wrap",1,set,15.0,15.0,various,

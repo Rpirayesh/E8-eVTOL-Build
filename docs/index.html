@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E8-S Build Viewer</title>
+<style>
+:root{--bg:#f4f5f7;--panel:#ffffff;--ink:#16181d;--muted:#5d6470;--line:#dfe2e7;--accent:#1f6feb;--fdm:#2f9e44;--cnc:#c2410c;--cots:#6741d9;--cut:#495057;--sel:#ffb000}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1115;--panel:#171a20;--ink:#e8eaee;--muted:#9aa3b0;--line:#2a2f38;--accent:#4c8dff}}
+:root[data-theme="dark"]{--bg:#0f1115;--panel:#171a20;--ink:#e8eaee;--muted:#9aa3b0;--line:#2a2f38;--accent:#4c8dff}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{display:flex;align-items:center;gap:16px;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--panel)}
+header h1{font-size:16px;margin:0;font-weight:650;letter-spacing:.2px}
+header nav{display:flex;gap:14px;margin-left:auto;flex-wrap:wrap}
+header a{color:var(--accent);text-decoration:none;font-size:13px}
+main{display:grid;grid-template-columns:320px 1fr 340px;height:calc(100% - 49px)}
+#list{overflow:auto;border-right:1px solid var(--line);background:var(--panel);padding:8px 0}
+#view{position:relative;min-height:300px}
+#view canvas{display:block;width:100%;height:100%}
+#info{overflow:auto;border-left:1px solid var(--line);background:var(--panel);padding:14px 16px}
+.grp{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:10px 14px 4px}
+.item{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;padding:5px 14px;cursor:pointer;border-left:3px solid transparent}
+.item:hover{background:color-mix(in srgb,var(--accent) 8%,transparent)}
+.item.on{border-left-color:var(--sel);background:color-mix(in srgb,var(--sel) 14%,transparent)}
+.item .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item .q{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}
+.b{font-size:10px;font-weight:700;padding:1px 6px;border-radius:999px;color:#fff;letter-spacing:.04em}
+.b.FDM{background:var(--fdm)}.b.CNC{background:var(--cnc)}.b.COTS{background:var(--cots)}.b.COTS-cut{background:var(--cut)}
+#tools{position:absolute;left:12px;top:12px;display:flex;flex-wrap:wrap;gap:6px;max-width:calc(100% - 24px)}
+#tools button,#tools label{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font:inherit;font-size:12px;cursor:pointer;display:flex;align-items:center;gap:6px}
+#tools button.on{border-color:var(--accent);color:var(--accent)}
+#stats{position:absolute;left:12px;bottom:12px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+#stats b{color:var(--ink)}
+#info h2{font-size:17px;margin:2px 0 4px}
+#info .sub{color:var(--muted);font-size:12px;margin-bottom:12px}
+#info table{width:100%;border-collapse:collapse;font-size:12.5px}
+#info td{padding:5px 0;border-bottom:1px solid var(--line);vertical-align:top}
+#info td:first-child{color:var(--muted);width:42%;padding-right:8px}
+#info .files a{display:inline-block;margin:8px 8px 0 0;padding:6px 10px;border:1px solid var(--line);border-radius:8px;color:var(--accent);text-decoration:none;font-size:12px}
+#info p{margin:10px 0}
+.legend{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 2px}
+#loading{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted)}
+@media (max-width:900px){main{grid-template-columns:1fr;grid-template-rows:55vh auto auto;height:auto}#view{height:55vh}#list,#info{border:0;border-top:1px solid var(--line);max-height:none}header{flex-wrap:wrap}}
+</style>
+<script type="importmap">{"imports":{"three":"./vendor/three/three.module.min.js","three/addons/":"./vendor/three/addons/"}}</script>
+</head>
+<body>
+<header>
+  <h1>E8-S lift + cruise demonstrator</h1>
+  <nav><a href="analysis.html">Analysis &amp; validation</a><a href="bom.html">Bill of materials</a><a href="https://github.com/Rpirayesh/E8-eVTOL-Build">Repository</a></nav>
+</header>
+<main>
+  <aside id="list" aria-label="Components"></aside>
+  <section id="view">
+    <div id="loading">Loading assembly…</div>
+    <div id="tools">
+      <button id="bExplode">Explode</button>
+      <button id="bIsolate">Isolate selected</button>
+      <button id="bShell">Hide fuselage &amp; wing skins</button>
+      <button id="bCots">Hide purchased parts</button>
+      <button id="bProc">Colour by process</button>
+      <button id="bReset">Reset view</button>
+    </div>
+    <div id="stats"></div>
+  </section>
+  <aside id="info"><h2>Select a component</h2><div class="sub">Click a part in the list or in the 3-D view. Each part shows how it is made, its material, settings and download links.</div>
+    <div class="legend"><span class="b FDM">FDM</span> 3-D printed <span class="b CNC">CNC</span> 3-axis machined <span class="b COTS">COTS</span> purchased <span class="b COTS-cut">CUT</span> bought stock cut to length</div>
+    <div id="summary"></div>
+  </aside>
+</main>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+
+const REPO = 'https://github.com/Rpirayesh/E8-eVTOL-Build/raw/main/';
+if (new URLSearchParams(location.search).get('clean')) {   // image export: canvas only
+  document.querySelector('header').style.display = 'none';
+  ['list', 'info', 'tools', 'stats'].forEach(id => document.getElementById(id).style.display = 'none');
+  document.querySelector('main').style.cssText = 'display:block;height:100vh';
+  document.getElementById('view').style.height = '100vh';
+}
+const PROC_COLOR = {FDM:0x2f9e44, CNC:0xc2410c, COTS:0x6741d9, 'COTS-cut':0x495057};
+const data = await (await fetch('data/parts.json')).json();
+const fea = await fetch('data/results/parts_fea.json').then(r => r.ok ? r.json() : {}).catch(() => ({}));
+const parts = Object.fromEntries(data.parts.map(p => [p.id, p]));
+
+const view = document.getElementById('view');
+const renderer = new THREE.WebGLRenderer({antialias:true, preserveDrawingBuffer:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+view.prepend(renderer.domElement);
+const scene = new THREE.Scene();
+const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+scene.background = new THREE.Color(dark ? 0x0f1115 : 0xf4f5f7);
+const camera = new THREE.PerspectiveCamera(35, 1, 10, 50000);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+scene.add(new THREE.HemisphereLight(0xffffff, 0x8a8f99, 2.2));
+const sun = new THREE.DirectionalLight(0xffffff, 2.0); sun.position.set(2000, 3000, 1500); scene.add(sun);
+const fill = new THREE.DirectionalLight(0xffffff, 0.6); fill.position.set(-2000, 800, -1500); scene.add(fill);
+const grid = new THREE.GridHelper(4000, 40, dark ? 0x2a2f38 : 0xc9cdd4, dark ? 0x1d2128 : 0xe1e4e8);
+scene.add(grid);
+
+const root = new THREE.Group(); root.rotation.x = -Math.PI / 2; scene.add(root);  // CAD is z-up (mm)
+const gltf = await new GLTFLoader().loadAsync('models/E8S_assembly.glb');
+root.add(gltf.scene);
+document.getElementById('loading').remove();
+
+const nodes = [];
+gltf.scene.traverse(o => {
+  if (o.isMesh) {
+    const id = (o.name || o.parent.name).split('#')[0].replace(/_\d+$/, '');
+    const pid = parts[id] ? id : (o.parent && parts[o.parent.name.split('#')[0]] ? o.parent.name.split('#')[0] : id);
+    o.userData.pid = pid;
+    o.material = o.material.clone();
+    o.material.metalness = /aluminium/.test(parts[pid]?.material || '') ? 0.6 : 0.05;
+    o.material.roughness = 0.55;
+    o.userData.base = o.material.color.clone();
+    o.userData.home = o.position.clone();
+    nodes.push(o);
+  }
+});
+const box = new THREE.Box3().setFromObject(root);
+const center = box.getCenter(new THREE.Vector3());
+grid.position.y = box.min.y;
+function resetView() {
+  camera.position.set(center.x + 2600, center.y + 1700, center.z + 2600);
+  controls.target.copy(center); controls.update();
+}
+resetView();
+
+// --- explode: move each instance away from the aircraft centre, by group
+const GROUP_PUSH = {Wing:[0,0,180], Tail:[350,0,120], Fuselage:[0,0,-220], Booms:[0,0,40], Propulsion:[0,0,120],
+                    'Landing gear':[0,0,-260], Power:[0,0,-420], Avionics:[0,0,-150]};
+let exploded = 0, explodeTarget = 0;
+const cadCenter = new THREE.Vector3(150, 0, -60);
+nodes.forEach(o => {
+  const p = parts[o.userData.pid]; const g = GROUP_PUSH[p?.group] || [0,0,0];
+  const wp = new THREE.Vector3(); o.getWorldPosition(wp);
+  const bb = new THREE.Box3().setFromObject(o); const c = bb.getCenter(new THREE.Vector3());
+  // convert world (y-up) centre back to CAD frame
+  const cad = new THREE.Vector3(c.x, -c.z, c.y);
+  const radial = new THREE.Vector3(0, Math.sign(cad.y) * Math.min(Math.abs(cad.y) * 0.25, 160), 0);
+  o.userData.dir = new THREE.Vector3(g[0], g[1], g[2]).add(radial);
+});
+
+let selected = null, isolate = false, hideShell = false, hideCots = false, byProc = false;
+const SHELL = /^(FUS-\d|FUS-H|W-R|W-C|W-O|W-A1|W-A2|W-T|W-TP|AIL)$/;
+function refresh() {
+  let shown = 0, mass = 0;
+  nodes.forEach(o => {
+    const p = parts[o.userData.pid];
+    let vis = true;
+    if (hideShell && SHELL.test(o.userData.pid)) vis = false;
+    if (hideCots && p?.purchased && p.process === 'COTS') vis = false;
+    if (isolate && selected && o.userData.pid !== selected) vis = false;
+    o.visible = vis;
+    const col = byProc && p ? new THREE.Color(PROC_COLOR[p.process]) : o.userData.base;
+    o.material.color.copy(col);
+    o.material.emissive = new THREE.Color(o.userData.pid === selected ? 0x553300 : 0x000000);
+  });
+  const m = data.mass;
+  document.getElementById('stats').innerHTML =
+    `<b>${data.parts.reduce((a,p)=>a+p.qty,0)}</b> components · <b>${data.parts.length}</b> unique · CAD mass <b>${m.cad_mass_kg.toFixed(2)} kg</b> · sized MTOW <b>${m.sizing_mass_kg.toFixed(2)} kg</b>`;
+}
+
+function select(pid) {
+  selected = pid;
+  document.querySelectorAll('.item').forEach(e => e.classList.toggle('on', e.dataset.id === pid));
+  const p = parts[pid]; if (!p) return;
+  const s = p.settings || {};
+  const rows = Object.entries(s).map(([k,v]) => `<tr><td>${k.replace(/_/g,' ')}</td><td>${v}</td></tr>`).join('');
+  const files = p.files && p.files.step ? `<div class="files"><a href="${REPO + p.files.step}">STEP</a><a href="${REPO + p.files.stl}">STL</a><a href="https://github.com/Rpirayesh/E8-eVTOL-Build/blob/main/${p.files.stl}">3-D preview on GitHub</a></div>` : '';
+  document.getElementById('info').innerHTML = `
+    <h2>${p.name}</h2><div class="sub"><span class="b ${p.process}">${p.process === 'COTS-cut' ? 'CUT' : p.process}</span> &nbsp;${p.id} · ${p.group}</div>
+    <table>
+      <tr><td>Quantity</td><td>${p.qty}</td></tr>
+      <tr><td>Material</td><td>${p.material}</td></tr>
+      <tr><td>Mass each</td><td>${p.mass_g_each} g</td></tr>
+      <tr><td>Envelope (mm)</td><td>${p.size_mm.join(' × ')}</td></tr>
+      ${rows}
+    </table>
+    ${p.notes ? `<p>${p.notes}</p>` : ''}${files}
+    <div class="files"><a href="#" id="soloBtn">View this part alone</a>${fea[pid] ? '<a href="#" id="feaBtn">View FEA stress</a>' : ''}</div>
+    ${fea[pid] ? `<p><b>FEA:</b> ${fea[pid].load_case}. von Mises ${fea[pid].vm_p995_mpa.toFixed(1)} MPa vs allowable ${fea[pid].allowable_mpa} MPa, margin ${fea[pid].MS >= 0 ? '+' : ''}${fea[pid].MS.toFixed(2)}.</p>` : ''}`;
+  document.getElementById('soloBtn').onclick = e => { e.preventDefault(); solo(p.glb, p.name); };
+  if (fea[pid]) document.getElementById('feaBtn').onclick = e => { e.preventDefault(); solo(fea[pid].glb, p.name + ' — von Mises stress (blue low, red at allowable)'); };
+  refresh();
+}
+
+// single-part view: shows one GLB (part or FEA result) centred, assembly hidden
+const soloGroup = new THREE.Group(); soloGroup.rotation.x = -Math.PI / 2; scene.add(soloGroup);
+const banner = document.createElement('div');
+banner.style.cssText = 'position:absolute;right:12px;top:12px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:12px;display:none';
+view.appendChild(banner);
+async function solo(url, title) {
+  soloGroup.clear();
+  const g = await new GLTFLoader().loadAsync(url);
+  g.scene.traverse(o => { if (o.isMesh) { o.material = o.material.clone(); o.material.side = THREE.DoubleSide;
+    if (!o.geometry.attributes.color) o.material.metalness = 0.1; } });
+  soloGroup.add(g.scene);
+  root.visible = false; grid.visible = false; soloGroup.visible = true;
+  const bb = new THREE.Box3().setFromObject(soloGroup), c = bb.getCenter(new THREE.Vector3()), r = bb.getSize(new THREE.Vector3()).length();
+  controls.target.copy(c); camera.position.copy(c).add(new THREE.Vector3(r * 0.9, r * 0.6, r * 0.9)); controls.update();
+  banner.innerHTML = `${title} &nbsp;<a href="#" id="backBtn">Back to assembly</a>`; banner.style.display = 'block';
+  document.getElementById('backBtn').onclick = e => { e.preventDefault(); soloGroup.visible = false; root.visible = true; grid.visible = true; banner.style.display = 'none'; resetView(); };
+}
+
+// list
+const groups = {};
+data.parts.forEach(p => (groups[p.group] ||= []).push(p));
+const list = document.getElementById('list');
+for (const [g, ps] of Object.entries(groups)) {
+  list.insertAdjacentHTML('beforeend', `<div class="grp">${g}</div>`);
+  ps.forEach(p => list.insertAdjacentHTML('beforeend',
+    `<div class="item" data-id="${p.id}"><span class="b ${p.process}">${p.process === 'COTS-cut' ? 'CUT' : p.process}</span><span class="nm" title="${p.name}">${p.name}</span><span class="q">×${p.qty}</span></div>`));
+}
+list.addEventListener('click', e => { const it = e.target.closest('.item'); if (it) select(it.dataset.id); });
+
+// picking
+const ray = new THREE.Raycaster(); const ptr = new THREE.Vector2(); let down;
+renderer.domElement.addEventListener('pointerdown', e => down = [e.clientX, e.clientY]);
+renderer.domElement.addEventListener('pointerup', e => {
+  if (!down || Math.hypot(e.clientX - down[0], e.clientY - down[1]) > 4) return;
+  const r = renderer.domElement.getBoundingClientRect();
+  ptr.set((e.clientX - r.left) / r.width * 2 - 1, -(e.clientY - r.top) / r.height * 2 + 1);
+  ray.setFromCamera(ptr, camera);
+  const hit = ray.intersectObjects(nodes.filter(n => n.visible), false)[0];
+  if (hit) { select(hit.object.userData.pid); document.querySelector(`.item[data-id="${hit.object.userData.pid}"]`)?.scrollIntoView({block:'nearest'}); }
+});
+
+const tog = (id, fn) => document.getElementById(id).addEventListener('click', e => { fn(); e.currentTarget.classList.toggle('on'); refresh(); });
+tog('bExplode', () => explodeTarget = explodeTarget ? 0 : 1);
+tog('bIsolate', () => isolate = !isolate);
+tog('bShell', () => hideShell = !hideShell);
+tog('bCots', () => hideCots = !hideCots);
+tog('bProc', () => byProc = !byProc);
+document.getElementById('bReset').addEventListener('click', resetView);
+
+function resize() {
+  const w = view.clientWidth, h = view.clientHeight;
+  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix();
+}
+new ResizeObserver(resize).observe(view); resize();
+refresh();
+const params = new URLSearchParams(location.search);
+if (params.get('part')) select(params.get('part'));
+if (params.get('explode')) { explodeTarget = 1; document.getElementById('bExplode').classList.add('on'); }
+if (params.get('shell') === '0') { hideShell = true; document.getElementById('bShell').classList.add('on'); refresh(); }
+if (params.get('cam')) {
+  const [x,y,z] = params.get('cam').split(',').map(Number);
+  const t = params.get('target') ? params.get('target').split(',').map(Number) : null;   // CAD mm
+  const tgt = t ? new THREE.Vector3(t[0], t[2], -t[1]) : center.clone();
+  controls.target.copy(tgt); camera.position.set(tgt.x + x, tgt.y + y, tgt.z + z); controls.update();
+}
+(function loop() {
+  requestAnimationFrame(loop);
+  exploded += (explodeTarget - exploded) * 0.12;
+  nodes.forEach(o => o.position.copy(o.userData.home).addScaledVector(o.userData.dir, exploded));
+  controls.update(); renderer.render(scene, camera);
+})();
+window.__ready = true;
+</script>
+</body>
+</html>

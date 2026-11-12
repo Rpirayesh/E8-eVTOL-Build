@@ -1,0 +1,11 @@
+{
+ "_source": "tools/build_cad.py: measured from the CAD of the selected design",
+ "wing_printed_kg_per_m2": 1.079418103448276,
+ "spars_kg_per_m_span": 0.2994827586206897,
+ "clamps_kg_total": 0.9036000000000001,
+ "nacelle_kg_each": 0.08680000000000002,
+ "tail_kg": 0.535,
+ "fuselage_kg": 1.3839000000000001,
+ "gear_kg": 0.2152,
+ "booms_kg_per_m": 0.2236864925729355
+}

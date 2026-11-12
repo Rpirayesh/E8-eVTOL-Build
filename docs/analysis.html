@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E8-S Analysis</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header><h1>E8-S lift + cruise demonstrator</h1>
+<nav><a href="index.html">3-D viewer</a><a href="analysis.html" aria-current="page">Analysis &amp; validation</a><a href="bom.html">Bill of materials</a><a href="https://github.com/Rpirayesh/E8-eVTOL-Build">Repository</a></nav></header>
+<main class="doc">
+  <section id="summary"></section>
+
+  <h2 id="sizing">1. Design optimisation</h2>
+  <p>Span, chord and battery are searched for maximum range at a required 25 m/s cruise. Constraints: thrust-to-weight ≥ 2,
+  most-loaded rotor ≤ 75 % of maximum with any one rotor failed, stall ≤ 15 m/s, battery C-rate and pusher current.
+  Lift-rotor power comes from the T-Motor bench table, pusher performance from APC's propeller data, structure masses from the CAD.</p>
+  <div class="grid2"><figure><img src="img/sizing_design_space.png" alt="Design space"><figcaption>Every candidate: dots pass all constraints.</figcaption></figure>
+  <figure><img src="img/sizing_pareto.png" alt="Speed range trade"><figcaption>Best range for each required cruise speed.</figcaption></figure></div>
+  <figure><img src="img/sizing_cruise_polar.png" alt="Cruise polar"><figcaption>Selected aircraft: power, L/D and propeller efficiency against airspeed.</figcaption></figure>
+
+  <h2 id="cfd">2. CFD (OpenFOAM v2412)</h2>
+  <h3>Validation: NACA 0012, NASA Turbulence Modeling Resource</h3>
+  <figure><img src="img/cfd_naca0012_validation.png" alt="NACA 0012 validation"></figure>
+  <div id="t0012"></div>
+  <figure><img src="img/cfd_grid_study.png" alt="Grid study"><figcaption>Grid convergence at 10°.</figcaption></figure>
+  <h3>Wing and tail sections at flight Reynolds numbers</h3>
+  <figure><img src="img/cfd_naca4415_polar.png" alt="NACA 4415 polar"></figure>
+  <h3>Full aircraft, cruise (lift rotors stopped)</h3>
+  <div id="t3d"></div>
+  <div class="grid2"><figure><img src="img/cfd3d_polar.png" alt="3-D polar"></figure><figure><img src="img/cfd3d_drag_breakdown.png" alt="Drag breakdown"></figure></div>
+  <h3>Hover: rotor wake on the wing</h3>
+  <div id="thover"></div>
+
+  <h2 id="fea">3. Structures (CalculiX + frame model)</h2>
+  <p>Ultimate loads = 1.5 × limit. Global cases: hover, all rotors at 100 %, maximum pitch/roll/yaw commands, +4 g and −2 g gusts,
+  4 g landings, worst rotor failure — with inertia relief. Part loads come from the bench maxima and the global model.</p>
+  <figure><img src="img/fea_margins.png" alt="Margins"></figure>
+  <div id="tparts" class="cards"></div>
+  <figure><img src="img/fea_campbell.png" alt="Campbell diagram"><figcaption>Airframe modes against rotor excitation.</figcaption></figure>
+  <div id="tval"></div>
+
+  <h2 id="prop">4. Can the propellers be printed?</h2>
+  <div class="grid2"><figure><img src="img/prop_bemt_vs_apc.png" alt="BEMT check"></figure><figure><img src="img/prop_printed_blade_stress.png" alt="Printed blade stress"></figure></div>
+  <div id="tprop"></div>
+
+  <h2 id="full">5. Full-scale two-seat aircraft with a pusher</h2>
+  <figure><img src="img/fullscale_range_vs_speed.png" alt="Full-scale range vs speed"></figure>
+  <div id="tfs"></div>
+</main>
+<script type="module">
+const get = async p => { try { const r = await fetch(p); return r.ok ? r.json() : null; } catch { return null; } };
+const f = (x, n = 1) => Number(x).toFixed(n);
+const table = (h, rows) => `<table><thead><tr>${h.map(x => `<th>${x}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+const R = 'data/results/';
+const [sel, c12, c3d, h3d, af, pf, val, prop, fs] = await Promise.all([
+  get(R + 'selected_design.json'), get(R + 'naca0012_validation.json'),
+  get(R + 'cruise3d.json'), get(R + 'hover3d.json'),
+  get(R + 'airframe.json'), get(R + 'parts_fea.json'),
+  get(R + 'validation.json'), get(R + 'propeller.json'), get(R + 'fullscale.json')]);
+if (sel) {
+  const m = sel.mission;
+  document.getElementById('summary').innerHTML = `<div class="kpis">
+    <div><b>${f(sel.mass.total_kg, 2)} kg</b><span>take-off mass</span></div>
+    <div><b>${f(m.range_km, 1)} km</b><span>range at ${f(m.cruise.V * 3.6, 0)} km/h</span></div>
+    <div><b>${f(m.cruise_min, 0)} min</b><span>cruise endurance</span></div>
+    <div><b>${f(sel.max_level_speed_ms * 3.6, 0)} km/h</b><span>top speed</span></div>
+    <div><b>${f(m.hover.tw_ratio, 2)}</b><span>thrust / weight</span></div>
+    <div><b>${f(sel.design.span_m, 1)} m</b><span>wing span</span></div></div>`;
+}
+if (c12) {
+  const ref = c12.tmr.CFL3D_SST_897x257;
+  document.getElementById('t0012').innerHTML = table(['α (deg)', 'CL OpenFOAM', 'CL CFL3D', 'CD OpenFOAM', 'CD CFL3D'],
+    c12.openfoam.filter(r => r.Cl !== undefined).map(r => { const i = ref.alpha.findIndex(a => Math.abs(a - r.alpha) < .1);
+      return [r.alpha, f(r.Cl, 4), i >= 0 ? f(ref.Cl[i], 4) : '—', f(r.Cd, 5), i >= 0 ? f(ref.Cd[i], 5) : '—']; }));
+}
+if (c3d) document.getElementById('t3d').innerHTML = table(['CD0', 'Oswald e', 'CLα (/deg)', 'Cruise α', 'Cruise L/D', 'Static margin', 'Cells'],
+  [[f(c3d.cd0_full_aircraft, 4), f(c3d.oswald_e, 2), f(c3d.cl_alpha_per_deg, 4), f(c3d.cruise_alpha_deg, 1) + '°', f(c3d.cruise_LD, 1), f(100 * c3d.static_margin, 0) + ' % MAC', c3d.mesh_cells]]);
+if (h3d) document.getElementById('thover').innerHTML = table(['Rotor thrust (total)', 'Download on airframe (upper bound)', 'Fraction'],
+  [[f(h3d.rotor_thrust_total_n, 0) + ' N', f(h3d.download_n, 1) + ' N', f(100 * h3d.download_fraction_of_thrust, 1) + ' %']])
+  + table(['Region', 'Vertical force (N, + up)'], Object.entries(h3d.vertical_force_by_region_n).map(([k, v]) => [k, f(v, 1)]))
+  + table(['Case', 'Thrust / rotor', 'Hover power', 'T/W', 'Worst rotor-out'], Object.entries(h3d.hover_sensitivity).map(([k, v]) =>
+      [k, f(v.thrust_per_rotor_n, 1) + ' N', f(v.hover_power_w, 0) + ' W', f(v.thrust_to_weight, 2), f(100 * v.worst_rotor_out_frac, 0) + ' %']))
+  + `<p>${h3d.model}. ${h3d.note}.</p>`;
+if (pf) document.getElementById('tparts').innerHTML = Object.entries(pf).map(([k, v]) =>
+  `<figure class="card"><img src="img/fea_${k}.png" alt="${v.part}"><figcaption><b>${v.part}</b> · ${v.material}<br>${v.load_case}<br>
+   σ<sub>vM</sub> ${f(v.vm_p995_mpa, 1)} MPa / allowable ${f(v.allowable_mpa, 0)} MPa → <b>MS ${v.MS >= 0 ? '+' : ''}${f(v.MS, 2)}</b></figcaption></figure>`).join('');
+if (val) document.getElementById('tval').innerHTML = '<h3>Solver verification</h3>' + table(['Check', 'Computed', 'Exact / reference'], [
+  ['CalculiX cantilever tip (finest mesh)', f(val.V1.mesh_study.at(-1).tip_mm, 4) + ' mm', f(val.V1.tip_timoshenko_mm, 4) + ' mm'],
+  ['CalculiX mid-span stress', f(val.V1.mesh_study.at(-1).sigma_mid_mpa, 2) + ' MPa', f(val.V1.sigma_mid_mpa, 2) + ' MPa'],
+  ['Frame solver tip deflection', f(val.V2.tip_mm, 3) + ' mm', f(val.V2.tip_analytic_mm, 3) + ' mm'],
+  ['Frame solver first frequency', f(val.V2.f1_hz, 3) + ' Hz', f(val.V2.f1_analytic_hz, 3) + ' Hz'],
+  ['CalculiX solid vs frame (tube)', f(val.V3.tip_ccx_mm, 4) + ' mm', f(val.V3.tip_frame_mm, 4) + ' mm']]);
+if (prop) document.getElementById('tprop').innerHTML = table(['Blade material', 'Peak stress', 'Static MS', 'Fatigue MS (cruise)'],
+  Object.entries(prop.printed_pusher.materials).map(([k, v]) => [k, f(v.max_stress_mpa, 1) + ' MPa', f(v.MS_static, 2), f(v.MS_fatigue_cruise, 2)]))
+  + `<p><b>Verdict:</b> buy the propellers. A printed PA6-CF pusher passes static strength but not fatigue; use it only for ground tests up to ${f(prop.printed_pusher.pa6cf_max_rpm_static.rpm, 0)} rpm behind a guard.</p>`;
+if (fs) document.getElementById('tfs').innerHTML = table(['', 'Original tilt rotor', 'Lift + cruise + pusher'], [
+  ['Cruise speed', fs.original.cruise_kph + ' km/h', fs.selected.V_kph + ' km/h'], ['Mass', fs.original.mass_kg + ' kg', f(fs.selected.mass_kg, 0) + ' kg'],
+  ['Range', fs.original.range_km + ' km', f(fs.selected.range_km, 1) + ' km'], ['Cruise power', fs.original.cruise_kw + ' kW', f(fs.selected.cruise_kw, 0) + ' kW']]);
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+stock,part,name,length_mm
+Roll-wrapped 3K carbon tube 30 x 27 mm #1,BM-R,Rear boom (30x27 CF tube),1431
+Roll-wrapped 3K carbon tube 30 x 27 mm #1,(offcut),,566
+Roll-wrapped 3K carbon tube 30 x 27 mm #2,BM-R,Rear boom (30x27 CF tube),1431
+Roll-wrapped 3K carbon tube 30 x 27 mm #2,(offcut),,566
+Roll-wrapped 3K carbon tube 30 x 27 mm #3,SP-MC,"Main spar, centre (30x27 CF tube)",1208
+Roll-wrapped 3K carbon tube 30 x 27 mm #3,(offcut),,789
+Roll-wrapped 3K carbon tube 30 x 27 mm #4,BM-F,Front boom (30x27 CF tube),1038
+Roll-wrapped 3K carbon tube 30 x 27 mm #4,SP-MO,"Main spar, outer panel (30x27 CF tube)",829
+Roll-wrapped 3K carbon tube 30 x 27 mm #4,(offcut),,127
+Roll-wrapped 3K carbon tube 30 x 27 mm #5,BM-F,Front boom (30x27 CF tube),1038
+Roll-wrapped 3K carbon tube 30 x 27 mm #5,SP-MO,"Main spar, outer panel (30x27 CF tube)",829
+Roll-wrapped 3K carbon tube 30 x 27 mm #5,(offcut),,127
+Roll-wrapped carbon tube 27 x 25 mm (joiners / sleeves) #1,SP-MJ,Main spar joiner (27x25 CF tube),302
+Roll-wrapped carbon tube 27 x 25 mm (joiners / sleeves) #1,SP-MJ,Main spar joiner (27x25 CF tube),302
+Roll-wrapped carbon tube 27 x 25 mm (joiners / sleeves) #1,BM-S,Boom joint sleeve (27x25 CF tube),152
+Roll-wrapped carbon tube 27 x 25 mm (joiners / sleeves) #1,BM-S,Boom joint sleeve (27x25 CF tube),152
+Roll-wrapped carbon tube 27 x 25 mm (joiners / sleeves) #1,(offcut),,80
+Pultruded/roll-wrapped carbon tube 12 x 10 mm #1,SP-RC,"Rear spar, centre (12x10 CF tube)",1208
+Pultruded/roll-wrapped carbon tube 12 x 10 mm #1,LG-T,Landing leg (12x10 CF tube),285
+Pultruded/roll-wrapped carbon tube 12 x 10 mm #1,LG-T,Landing leg (12x10 CF tube),285
+Pultruded/roll-wrapped carbon tube 12 x 10 mm #1,(offcut),,213
+Pultruded/roll-wrapped carbon tube 12 x 10 mm #2,SP-RO,"Rear spar, outer panel (12x10 CF tube)",829
+Pultruded/roll-wrapped carbon tube 12 x 10 mm #2,SP-RO,"Rear spar, outer panel (12x10 CF tube)",829
+Pultruded/roll-wrapped carbon tube 12 x 10 mm #2,LG-TP,Landing leg (port),285
+Pultruded/roll-wrapped carbon tube 12 x 10 mm #2,(offcut),,48
+Pultruded/roll-wrapped carbon tube 12 x 10 mm #3,LG-TP,Landing leg (port),285
+Pultruded/roll-wrapped carbon tube 12 x 10 mm #3,(offcut),,1712
+Pultruded carbon rod 10 mm #1,SP-RJ,Rear spar joiner (10 mm CF rod),202
+Pultruded carbon rod 10 mm #1,SP-RJ,Rear spar joiner (10 mm CF rod),202
+Pultruded carbon rod 10 mm #1,(offcut),,590
+Pultruded carbon rod 6 mm #1,HS-SP,Stabiliser spar (6 mm CF rod),1206
+Pultruded carbon rod 6 mm #1,(offcut),,291
+"Pultruded carbon rod 4 mm (torque rods, fin spars) #1",AIL-ROD,Aileron torque rod,452
+"Pultruded carbon rod 4 mm (torque rods, fin spars) #1",AIL-ROD,Aileron torque rod,452
+"Pultruded carbon rod 4 mm (torque rods, fin spars) #1",(offcut),,90
+"Pultruded carbon rod 4 mm (torque rods, fin spars) #2",FIN-SP,Fin spar,220
+"Pultruded carbon rod 4 mm (torque rods, fin spars) #2",FIN-SP,Fin spar,220
+"Pultruded carbon rod 4 mm (torque rods, fin spars) #2",(offcut),,554
+Pultruded carbon rod 3 mm (elevator torque rod) #1,ELV-ROD,Elevator torque rod,1200
+Pultruded carbon rod 3 mm (elevator torque rod) #1,(offcut),,297

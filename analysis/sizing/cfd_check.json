@@ -1,0 +1,320 @@
+{
+  "design": {
+    "span_m": 3.0,
+    "chord_m": 0.28,
+    "battery": "battery_16000",
+    "n_battery": 2,
+    "cruise_ms": 25.0,
+    "boom_y_m": 0.6,
+    "fuselage_len_m": 1.25,
+    "fuselage_w_m": 0.24,
+    "fuselage_h_m": 0.26,
+    "static_margin": 0.15,
+    "rotor_gap_m": 0.06,
+    "cd0_override": 0.08524080381117938
+  },
+  "geometry": {
+    "S": 0.8400000000000001,
+    "AR": 10.714285714285714,
+    "rotor_x": [
+      -0.8058000000000001,
+      -0.2886,
+      0.5972346709955925,
+      1.1144346709955926
+    ],
+    "rotor_y": 0.6,
+    "rotor_R": 0.2286,
+    "boom_front": -0.8558000000000001,
+    "boom_aft": 1.5630346709955927,
+    "boom_len": 2.418834670995593,
+    "tail_le": 1.3930346709955925,
+    "tail_span": 1.2,
+    "x_cg_target": 0.15431733549779625,
+    "fus_nose": -0.42,
+    "wing_z": 0.1,
+    "boom_z": 0.0,
+    "fus_tail": 0.8300000000000001,
+    "tail_chord": 0.11,
+    "x_np": 0.19632406811138314
+  },
+  "mass": {
+    "items": {
+      "lift motors": {
+        "kg": 1.08,
+        "x": 0.1543,
+        "z": 0.05
+      },
+      "lift props": {
+        "kg": 0.208,
+        "x": 0.1543,
+        "z": 0.09
+      },
+      "lift ESCs": {
+        "kg": 0.592,
+        "x": 0.1543,
+        "z": 0.0
+      },
+      "motor nacelles (printed)": {
+        "kg": 0.6944,
+        "x": 0.1543,
+        "z": 0.02
+      },
+      "booms (CF tube)": {
+        "kg": 1.0821,
+        "x": 0.3536,
+        "z": 0.0
+      },
+      "boom-wing fittings": {
+        "kg": 0.9036,
+        "x": 0.14,
+        "z": 0.02
+      },
+      "wing (printed LW-PLA)": {
+        "kg": 0.9067,
+        "x": 0.1176,
+        "z": 0.1
+      },
+      "wing spars": {
+        "kg": 0.8984,
+        "x": 0.098,
+        "z": 0.1
+      },
+      "H-tail + fins": {
+        "kg": 0.535,
+        "x": 1.437,
+        "z": 0.08
+      },
+      "fuselage shell + frames": {
+        "kg": 1.3839,
+        "x": 0.1425,
+        "z": -0.05
+      },
+      "landing gear": {
+        "kg": 0.2152,
+        "x": 0.084,
+        "z": -0.2
+      },
+      "pusher motor": {
+        "kg": 0.408,
+        "x": 0.77,
+        "z": -0.02
+      },
+      "pusher prop + ESC": {
+        "kg": 0.185,
+        "x": 0.78,
+        "z": -0.02
+      },
+      "avionics": {
+        "kg": 0.257,
+        "x": -0.15,
+        "z": 0.02
+      },
+      "servos": {
+        "kg": 0.125,
+        "x": 0.6,
+        "z": 0.05
+      },
+      "harness + PDB": {
+        "kg": 0.36,
+        "x": 0.15,
+        "z": -0.05
+      },
+      "fasteners + adhesive": {
+        "kg": 0.15,
+        "x": 0.2,
+        "z": 0.0
+      },
+      "growth (10 % of empty)": {
+        "kg": 0.9984,
+        "x": 0.1543,
+        "z": 0.0
+      },
+      "battery": {
+        "kg": 3.76,
+        "x": -0.1444,
+        "z": -0.08
+      }
+    },
+    "total_kg": 14.742818847105875,
+    "x_battery": -0.1444474585795376,
+    "z_cg": -0.007020981048305931
+  },
+  "mission": {
+    "e_nom_wh": 710.4000000000001,
+    "e_usable_wh": 539.904,
+    "e_hover_wh": 54.33878429814541,
+    "hover_current_a": 38.64778399583599,
+    "c_rate_hover": 2.415486499739749,
+    "e_cruise_wh": 477.5652157018546,
+    "cruise_min": 18.89380116576229,
+    "range_km": 28.340701748643436,
+    "cruise": {
+      "V": 25.0,
+      "CL": 0.449609840845779,
+      "CD0": 0.08524080381117938,
+      "CD": 0.09274784041611417,
+      "LD": 4.8476583263674895,
+      "drag_n": 29.82422743380672,
+      "prop_rpm": 7350.364002236538,
+      "eta_prop": 0.654123307703765,
+      "eta_motor": 0.7555826433544177,
+      "motor_current": 39.548357819863774,
+      "motor_voltage": 38.1451352487277,
+      "p_elec_w": 1516.5774579037814
+    },
+    "hover": {
+      "thrust_per_rotor_n": 18.072208055871354,
+      "p_elec_w": 1630.1635289443623,
+      "rpm": 4039.0172241107275,
+      "torque_nm": 0.40241410768945907,
+      "throttle_frac_thrust": 0.449476184362984,
+      "tw_ratio": 2.224811980677554,
+      "fm": 0.7117133319796137
+    }
+  },
+  "stall_ms": 14.993495937335279,
+  "rotor_out": [
+    {
+      "failed": "RP1",
+      "feasible": true,
+      "max_thrust_n": 26.473045813929104,
+      "max_thrust_frac": 0.658414488374902,
+      "max_motor_power_w": 351.71467731039763
+    },
+    {
+      "failed": "RP2",
+      "feasible": true,
+      "max_thrust_n": 24.096277407828467,
+      "max_thrust_frac": 0.5993015791506452,
+      "max_motor_power_w": 306.4001296148541
+    },
+    {
+      "failed": "RP3",
+      "feasible": true,
+      "max_thrust_n": 24.096277407828474,
+      "max_thrust_frac": 0.5993015791506454,
+      "max_motor_power_w": 306.4001296148544
+    },
+    {
+      "failed": "RP4",
+      "feasible": true,
+      "max_thrust_n": 26.473045813929108,
+      "max_thrust_frac": 0.6584144883749021,
+      "max_motor_power_w": 351.71467731039763
+    },
+    {
+      "failed": "RS1",
+      "feasible": true,
+      "max_thrust_n": 26.47304581392912,
+      "max_thrust_frac": 0.6584144883749024,
+      "max_motor_power_w": 351.714677310398
+    },
+    {
+      "failed": "RS2",
+      "feasible": true,
+      "max_thrust_n": 24.096277407828467,
+      "max_thrust_frac": 0.5993015791506452,
+      "max_motor_power_w": 306.4001296148541
+    },
+    {
+      "failed": "RS3",
+      "feasible": true,
+      "max_thrust_n": 24.096277407828467,
+      "max_thrust_frac": 0.5993015791506452,
+      "max_motor_power_w": 306.4001296148541
+    },
+    {
+      "failed": "RS4",
+      "feasible": true,
+      "max_thrust_n": 26.473045813929115,
+      "max_thrust_frac": 0.6584144883749022,
+      "max_motor_power_w": 351.714677310398
+    }
+  ],
+  "drag_buildup": {
+    "wing": 0.010413611461481315,
+    "fuselage": 0.004599160671619952,
+    "tail": 0.002732781362368274,
+    "booms": 0.0013161697274894015,
+    "stopped_rotors": 0.0273744,
+    "landing_gear": 0.00432,
+    "pusher_hub": 0.004,
+    "interference_10pct": 0.005475612322295896,
+    "total": 0.06023173554525483
+  },
+  "optimisation": {
+    "candidates": 396,
+    "feasible": 2,
+    "constraints": {
+      "stall_ms_max": 15.0,
+      "tw_min": 2.0,
+      "rotor_out_frac_max": 0.75,
+      "hover_c_rate_max": 0.5,
+      "cruise_current_max_a": 40.0,
+      "span_max_m": 3.0,
+      "aspect_ratio_min": 6.0
+    },
+    "objective": "maximum range at cruise speed >= 25.0 m/s with 2 min hover, 8 Wh transition, 20 % reserve",
+    "drag_model": "CFD-calibrated CD0"
+  },
+  "max_level_speed_ms": 27.25,
+  "layout": [
+    {
+      "name": "RP1",
+      "x": -0.9601173354977963,
+      "y": -0.6,
+      "spin": 1
+    },
+    {
+      "name": "RP2",
+      "x": -0.44291733549779627,
+      "y": -0.6,
+      "spin": -1
+    },
+    {
+      "name": "RP3",
+      "x": 0.4429173354977962,
+      "y": -0.6,
+      "spin": 1
+    },
+    {
+      "name": "RP4",
+      "x": 0.9601173354977963,
+      "y": -0.6,
+      "spin": -1
+    },
+    {
+      "name": "RS1",
+      "x": -0.9601173354977963,
+      "y": 0.6,
+      "spin": -1
+    },
+    {
+      "name": "RS2",
+      "x": -0.44291733549779627,
+      "y": 0.6,
+      "spin": 1
+    },
+    {
+      "name": "RS3",
+      "x": 0.4429173354977962,
+      "y": 0.6,
+      "spin": -1
+    },
+    {
+      "name": "RS4",
+      "x": 0.9601173354977963,
+      "y": 0.6,
+      "spin": 1
+    }
+  ],
+  "frozen_design_with_cfd_drag": {
+    "cd0": 0.08524080381117938,
+    "range_km": 35.15011681858521,
+    "cruise_min": 23.433411212390137,
+    "cruise_w": 1724.8346694187683,
+    "LD": 4.693348180789847,
+    "pusher_current_a": 43.13463334221883,
+    "max_speed_ms": 26.25
+  }
+}

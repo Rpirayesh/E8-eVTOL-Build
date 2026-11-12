@@ -1,0 +1,1514 @@
+{
+ "rows": [
+  {
+   "category": "Propulsion",
+   "item": "T-Motor Antigravity MN5008 KV170 (12S)",
+   "qty": 8,
+   "unit": "pc",
+   "unit_price_usd": 89.99,
+   "total_usd": 719.92,
+   "source": "https://store.tmotor.com/goods.php?id=1000",
+   "note": "24N28P, 12S, 6 mm shaft; bench 4.10 kg max with P18x6.1 at 47 V"
+  },
+  {
+   "category": "Propulsion",
+   "item": "T-Motor P18x6.1 carbon propeller (CW+CCW pair)",
+   "qty": 4,
+   "unit": "pair",
+   "unit_price_usd": 82.8,
+   "total_usd": 331.2,
+   "source": "https://www.getfpv.com/tiger-18x6-1-carbon-fiber-props-pair.html",
+   "note": "4 CW + 4 CCW; buy 1 spare pair"
+  },
+  {
+   "category": "Propulsion",
+   "item": "T-Motor FLAME 60A 12S ESC",
+   "qty": 8,
+   "unit": "pc",
+   "unit_price_usd": 99.99,
+   "total_usd": 799.92,
+   "source": "https://irlock.com/products/t-motor-flame-60a-12s",
+   "note": "60 A continuous, 80 A peak (10 s), 6-12S, PWM"
+  },
+  {
+   "category": "Propulsion",
+   "item": "T-Motor AT4130 Long Shaft KV230 (12S)",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 119.99,
+   "total_usd": 119.99,
+   "source": "https://store.tmotor.com/goods.php?id=828",
+   "note": "12S, 60 A peak (180 s), 60 mOhm; bench 7.63 kg static with APC 17x10 at 43.6 V"
+  },
+  {
+   "category": "Propulsion",
+   "item": "APC 17x10E pusher (17x10EP)",
+   "qty": 2,
+   "unit": "pc",
+   "unit_price_usd": 18.5,
+   "total_usd": 37.0,
+   "source": "https://www.apcprop.com/product/17x10ep/",
+   "note": "1 + 1 spare"
+  },
+  {
+   "category": "Propulsion",
+   "item": "T-Motor FLAME 80A 12S V2.0 ESC",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 119.99,
+   "total_usd": 119.99,
+   "source": "https://irlock.com/products/t-motor-flame-80a-12s-v2-0",
+   "note": "80 A continuous, 12S"
+  },
+  {
+   "category": "Power",
+   "item": "Tattu 22000mAh 6S 25C LiPo",
+   "qty": 2,
+   "unit": "pc",
+   "unit_price_usd": 349.0,
+   "total_usd": 698.0,
+   "source": "https://www.getfpv.com/tattu-22000mah-6s-25c-lipo-battery-5340.html",
+   "note": "Two 6S packs in series = 12S 22 Ah; buy a second set for turnaround"
+  },
+  {
+   "category": "Avionics",
+   "item": "Holybro Pixhawk 6X Standard Set (v2B)",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 347.99,
+   "total_usd": 347.99,
+   "source": "https://www.racedayquads.com/products/holybro-pixhawk-6x-fc-module-v2b-standard-set-icm-45686",
+   "note": "Triple IMU, PX4/ArduPilot, includes PM02D power module and cables"
+  },
+  {
+   "category": "Avionics",
+   "item": "Holybro M10 GPS",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 44.99,
+   "total_usd": 44.99,
+   "source": "https://holybro.com/collections/gps",
+   "note": ""
+  },
+  {
+   "category": "Avionics",
+   "item": "Holybro digital airspeed sensor (MS4525DO) with pitot",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 49.99,
+   "total_usd": 49.99,
+   "source": "https://holybro.com/collections/sensors",
+   "note": ""
+  },
+  {
+   "category": "Avionics",
+   "item": "Holybro PM08D power module (14S, 200 A)",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 49.99,
+   "total_usd": 49.99,
+   "source": "https://holybro.com/collections/power-modules-pdbs",
+   "note": "12S bus; hover current about 35-45 A"
+  },
+  {
+   "category": "Avionics",
+   "item": "Holybro SiK telemetry radio V3 (pair)",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 58.99,
+   "total_usd": 58.99,
+   "source": "https://holybro.com/collections/telemetry-radios",
+   "note": ""
+  },
+  {
+   "category": "Avionics",
+   "item": "ExpressLRS 2.4 GHz receiver (e.g. RadioMaster RP3)",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 24.99,
+   "total_usd": 24.99,
+   "source": "https://www.radiomasterrc.com/",
+   "note": ""
+  },
+  {
+   "category": "Avionics",
+   "item": "Holybro UBEC 12S (5.3 V / 3 A) for servos",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 24.99,
+   "total_usd": 24.99,
+   "source": "https://holybro.com/collections/power-modules-pdbs",
+   "note": ""
+  },
+  {
+   "category": "Avionics",
+   "item": "Metal-gear digital servo, 25 g class (e.g. Savox SH-1290MG / KST X10)",
+   "qty": 5,
+   "unit": "pc",
+   "unit_price_usd": 35.0,
+   "total_usd": 175.0,
+   "source": "https://www.savox-usa.com/",
+   "note": "2 aileron, 1 elevator, 2 rudder"
+  },
+  {
+   "category": "Power",
+   "item": "Silicone wire 10/14 AWG, XT90-S, XT60, 4 mm bullets, PDB, fuse",
+   "qty": 1,
+   "unit": "set",
+   "unit_price_usd": 120.0,
+   "total_usd": 120.0,
+   "source": "various",
+   "note": "10 AWG main bus, 14 AWG motor leads, XT90-S, AS150 series link; mass est."
+  },
+  {
+   "category": "Power",
+   "item": "12S LiPo balance charger (e.g. ISDT/ToolkitRC dual 6S) + LiPo safety bags",
+   "qty": 1,
+   "unit": "set",
+   "unit_price_usd": 260.0,
+   "total_usd": 260.0,
+   "source": "various",
+   "note": "ground equipment"
+  },
+  {
+   "category": "Avionics",
+   "item": "RC transmitter with ExpressLRS (e.g. RadioMaster TX16S / Boxer)",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 160.0,
+   "total_usd": 160.0,
+   "source": "https://www.radiomasterrc.com/",
+   "note": "skip if already owned"
+  },
+  {
+   "category": "Raw stock",
+   "item": "Roll-wrapped 3K carbon tube 30 x 27 mm, 2000 mm",
+   "qty": 5,
+   "unit": "length",
+   "unit_price_usd": 58.0,
+   "total_usd": 290.0,
+   "source": "https://www.easycomposites.co.uk/",
+   "note": "5 lengths; see cut_list.csv"
+  },
+  {
+   "category": "Raw stock",
+   "item": "Roll-wrapped carbon tube 27 x 25 mm (joiners / sleeves), 1000 mm",
+   "qty": 1,
+   "unit": "length",
+   "unit_price_usd": 26.0,
+   "total_usd": 26.0,
+   "source": "https://www.easycomposites.co.uk/",
+   "note": "1 lengths; see cut_list.csv"
+  },
+  {
+   "category": "Raw stock",
+   "item": "Pultruded/roll-wrapped carbon tube 12 x 10 mm, 2000 mm",
+   "qty": 3,
+   "unit": "length",
+   "unit_price_usd": 22.0,
+   "total_usd": 66.0,
+   "source": "https://www.easycomposites.co.uk/",
+   "note": "3 lengths; see cut_list.csv"
+  },
+  {
+   "category": "Raw stock",
+   "item": "Pultruded carbon rod 10 mm, 1000 mm",
+   "qty": 1,
+   "unit": "length",
+   "unit_price_usd": 14.0,
+   "total_usd": 14.0,
+   "source": "https://www.easycomposites.co.uk/",
+   "note": "1 lengths; see cut_list.csv"
+  },
+  {
+   "category": "Raw stock",
+   "item": "Pultruded carbon rod 6 mm, 1500 mm",
+   "qty": 1,
+   "unit": "length",
+   "unit_price_usd": 9.0,
+   "total_usd": 9.0,
+   "source": "https://www.easycomposites.co.uk/",
+   "note": "1 lengths; see cut_list.csv"
+  },
+  {
+   "category": "Raw stock",
+   "item": "Pultruded carbon rod 4 mm (torque rods, fin spars), 1000 mm",
+   "qty": 2,
+   "unit": "length",
+   "unit_price_usd": 4.0,
+   "total_usd": 8.0,
+   "source": "https://www.easycomposites.co.uk/",
+   "note": "2 lengths; see cut_list.csv"
+  },
+  {
+   "category": "Raw stock",
+   "item": "Pultruded carbon rod 3 mm (elevator torque rod), 1500 mm",
+   "qty": 1,
+   "unit": "length",
+   "unit_price_usd": 4.0,
+   "total_usd": 4.0,
+   "source": "https://www.easycomposites.co.uk/",
+   "note": "1 lengths; see cut_list.csv"
+  },
+  {
+   "category": "Filament",
+   "item": "ColorFabb LW-PLA 1.75 mm (LW-PLA (foamed))",
+   "qty": 3,
+   "unit": "spool",
+   "unit_price_usd": 45.0,
+   "total_usd": 135.0,
+   "source": "various",
+   "note": "1.75 kg in parts; 35 % allowance"
+  },
+  {
+   "category": "Filament",
+   "item": "Bambu PAHT-CF / Polymaker PA6-CF (PA6-CF)",
+   "qty": 2,
+   "unit": "spool",
+   "unit_price_usd": 70.0,
+   "total_usd": 140.0,
+   "source": "various",
+   "note": "1.23 kg in parts; 35 % allowance"
+  },
+  {
+   "category": "Filament",
+   "item": "any PETG 1.75 mm (PETG)",
+   "qty": 1,
+   "unit": "spool",
+   "unit_price_usd": 22.0,
+   "total_usd": 22.0,
+   "source": "various",
+   "note": "0.19 kg in parts; 35 % allowance"
+  },
+  {
+   "category": "Filament",
+   "item": "Bambu PETG-CF (PETG-CF)",
+   "qty": 1,
+   "unit": "spool",
+   "unit_price_usd": 35.0,
+   "total_usd": 35.0,
+   "source": "various",
+   "note": "0.12 kg in parts; 35 % allowance"
+  },
+  {
+   "category": "Filament",
+   "item": "TPU 95A 1.75 mm (TPU 95A)",
+   "qty": 1,
+   "unit": "spool",
+   "unit_price_usd": 30.0,
+   "total_usd": 30.0,
+   "source": "various",
+   "note": "0.06 kg in parts; 35 % allowance"
+  },
+  {
+   "category": "CNC stock",
+   "item": "6061-T6 plate 6 mm, 350 x 150 mm (boom ribs)",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 32.0,
+   "total_usd": 32.0,
+   "source": "https://www.onlinemetals.com/",
+   "note": "2 ribs"
+  },
+  {
+   "category": "CNC stock",
+   "item": "6061-T6 plate 3 mm, 120 x 120 mm (firewall)",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 9.0,
+   "total_usd": 9.0,
+   "source": "https://www.onlinemetals.com/",
+   "note": ""
+  },
+  {
+   "category": "CNC stock",
+   "item": "6061-T6 bar 50 x 30 x 340 mm (two saddles)",
+   "qty": 1,
+   "unit": "pc",
+   "unit_price_usd": 28.0,
+   "total_usd": 28.0,
+   "source": "https://www.onlinemetals.com/",
+   "note": ""
+  },
+  {
+   "category": "CNC stock",
+   "item": "Aircraft birch plywood 3 mm, 600 x 600 mm",
+   "qty": 2,
+   "unit": "sheet",
+   "unit_price_usd": 24.0,
+   "total_usd": 48.0,
+   "source": "various",
+   "note": "bulkheads 1, 2, 5, 6, tray, deck"
+  },
+  {
+   "category": "CNC stock",
+   "item": "Aircraft birch plywood 6 mm, 300 x 300 mm",
+   "qty": 1,
+   "unit": "sheet",
+   "unit_price_usd": 18.0,
+   "total_usd": 18.0,
+   "source": "various",
+   "note": "bulkheads 3, 4 (wing carry)"
+  },
+  {
+   "category": "Fasteners",
+   "item": "M3 x 40 socket head + nyloc (nacelle clamps)",
+   "qty": 32,
+   "unit": "pc",
+   "unit_price_usd": 0.18,
+   "total_usd": 5.76,
+   "source": "McMaster-Carr / Bossard",
+   "note": ""
+  },
+  {
+   "category": "Fasteners",
+   "item": "M3 x 8 socket head, blue threadlocker (motor mounting)",
+   "qty": 40,
+   "unit": "pc",
+   "unit_price_usd": 0.08,
+   "total_usd": 3.2,
+   "source": "McMaster-Carr / Bossard",
+   "note": ""
+  },
+  {
+   "category": "Fasteners",
+   "item": "M3 x 12 + nyloc (fuselage joints, 8 per joint)",
+   "qty": 48,
+   "unit": "pc",
+   "unit_price_usd": 0.1,
+   "total_usd": 4.8,
+   "source": "McMaster-Carr / Bossard",
+   "note": ""
+  },
+  {
+   "category": "Fasteners",
+   "item": "M3 heat-set inserts (firewall boss, hatch, misc.)",
+   "qty": 30,
+   "unit": "pc",
+   "unit_price_usd": 0.1,
+   "total_usd": 3.0,
+   "source": "McMaster-Carr / Bossard",
+   "note": ""
+  },
+  {
+   "category": "Fasteners",
+   "item": "M4 x 45 socket head + washers + nyloc (saddle clamps)",
+   "qty": 12,
+   "unit": "pc",
+   "unit_price_usd": 0.25,
+   "total_usd": 3.0,
+   "source": "McMaster-Carr / Bossard",
+   "note": ""
+  },
+  {
+   "category": "Fasteners",
+   "item": "M4 heat-set inserts + M4 x 16 (spar caps)",
+   "qty": 4,
+   "unit": "pc",
+   "unit_price_usd": 0.3,
+   "total_usd": 1.2,
+   "source": "McMaster-Carr / Bossard",
+   "note": ""
+  },
+  {
+   "category": "Fasteners",
+   "item": "M5 x 60 socket head + nyloc (saddle-rib cross bolts)",
+   "qty": 4,
+   "unit": "pc",
+   "unit_price_usd": 0.4,
+   "total_usd": 1.6,
+   "source": "McMaster-Carr / Bossard",
+   "note": ""
+  },
+  {
+   "category": "Fasteners",
+   "item": "M3 x 30 + nyloc (tail blocks, leg sockets)",
+   "qty": 12,
+   "unit": "pc",
+   "unit_price_usd": 0.15,
+   "total_usd": 1.8,
+   "source": "McMaster-Carr / Bossard",
+   "note": ""
+  },
+  {
+   "category": "Fasteners",
+   "item": "Neodymium magnets 10 x 3 mm (nose cone)",
+   "qty": 4,
+   "unit": "pc",
+   "unit_price_usd": 0.3,
+   "total_usd": 1.2,
+   "source": "McMaster-Carr / Bossard",
+   "note": ""
+  },
+  {
+   "category": "Consumables",
+   "item": "Laminating epoxy 500 g + slow hardener (spar/boom bonding, glass centre section)",
+   "qty": 1,
+   "unit": "set",
+   "unit_price_usd": 38.0,
+   "total_usd": 38.0,
+   "source": "various",
+   "note": ""
+  },
+  {
+   "category": "Consumables",
+   "item": "Thick CA + activator",
+   "qty": 1,
+   "unit": "set",
+   "unit_price_usd": 15.0,
+   "total_usd": 15.0,
+   "source": "various",
+   "note": ""
+  },
+  {
+   "category": "Consumables",
+   "item": "Glass cloth 80 g/m2, 1 m2 (optional centre-section stiffening)",
+   "qty": 1,
+   "unit": "set",
+   "unit_price_usd": 12.0,
+   "total_usd": 12.0,
+   "source": "various",
+   "note": ""
+  },
+  {
+   "category": "Consumables",
+   "item": "Velcro battery straps 25 mm x 4, anti-slip mat",
+   "qty": 1,
+   "unit": "set",
+   "unit_price_usd": 18.0,
+   "total_usd": 18.0,
+   "source": "various",
+   "note": ""
+  },
+  {
+   "category": "Consumables",
+   "item": "Servo extensions, Y-leads",
+   "qty": 1,
+   "unit": "set",
+   "unit_price_usd": 20.0,
+   "total_usd": 20.0,
+   "source": "various",
+   "note": ""
+  },
+  {
+   "category": "Consumables",
+   "item": "Heat-shrink, cable ties, spiral wrap",
+   "qty": 1,
+   "unit": "set",
+   "unit_price_usd": 15.0,
+   "total_usd": 15.0,
+   "source": "various",
+   "note": ""
+  }
+ ],
+ "cut_list": [
+  {
+   "stock": "Roll-wrapped 3K carbon tube 30 x 27 mm #1",
+   "part": "BM-R",
+   "name": "Rear boom (30x27 CF tube)",
+   "length_mm": 1431
+  },
+  {
+   "stock": "Roll-wrapped 3K carbon tube 30 x 27 mm #1",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 566
+  },
+  {
+   "stock": "Roll-wrapped 3K carbon tube 30 x 27 mm #2",
+   "part": "BM-R",
+   "name": "Rear boom (30x27 CF tube)",
+   "length_mm": 1431
+  },
+  {
+   "stock": "Roll-wrapped 3K carbon tube 30 x 27 mm #2",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 566
+  },
+  {
+   "stock": "Roll-wrapped 3K carbon tube 30 x 27 mm #3",
+   "part": "SP-MC",
+   "name": "Main spar, centre (30x27 CF tube)",
+   "length_mm": 1208
+  },
+  {
+   "stock": "Roll-wrapped 3K carbon tube 30 x 27 mm #3",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 789
+  },
+  {
+   "stock": "Roll-wrapped 3K carbon tube 30 x 27 mm #4",
+   "part": "BM-F",
+   "name": "Front boom (30x27 CF tube)",
+   "length_mm": 1038
+  },
+  {
+   "stock": "Roll-wrapped 3K carbon tube 30 x 27 mm #4",
+   "part": "SP-MO",
+   "name": "Main spar, outer panel (30x27 CF tube)",
+   "length_mm": 829
+  },
+  {
+   "stock": "Roll-wrapped 3K carbon tube 30 x 27 mm #4",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 127
+  },
+  {
+   "stock": "Roll-wrapped 3K carbon tube 30 x 27 mm #5",
+   "part": "BM-F",
+   "name": "Front boom (30x27 CF tube)",
+   "length_mm": 1038
+  },
+  {
+   "stock": "Roll-wrapped 3K carbon tube 30 x 27 mm #5",
+   "part": "SP-MO",
+   "name": "Main spar, outer panel (30x27 CF tube)",
+   "length_mm": 829
+  },
+  {
+   "stock": "Roll-wrapped 3K carbon tube 30 x 27 mm #5",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 127
+  },
+  {
+   "stock": "Roll-wrapped carbon tube 27 x 25 mm (joiners / sleeves) #1",
+   "part": "SP-MJ",
+   "name": "Main spar joiner (27x25 CF tube)",
+   "length_mm": 302
+  },
+  {
+   "stock": "Roll-wrapped carbon tube 27 x 25 mm (joiners / sleeves) #1",
+   "part": "SP-MJ",
+   "name": "Main spar joiner (27x25 CF tube)",
+   "length_mm": 302
+  },
+  {
+   "stock": "Roll-wrapped carbon tube 27 x 25 mm (joiners / sleeves) #1",
+   "part": "BM-S",
+   "name": "Boom joint sleeve (27x25 CF tube)",
+   "length_mm": 152
+  },
+  {
+   "stock": "Roll-wrapped carbon tube 27 x 25 mm (joiners / sleeves) #1",
+   "part": "BM-S",
+   "name": "Boom joint sleeve (27x25 CF tube)",
+   "length_mm": 152
+  },
+  {
+   "stock": "Roll-wrapped carbon tube 27 x 25 mm (joiners / sleeves) #1",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 80
+  },
+  {
+   "stock": "Pultruded/roll-wrapped carbon tube 12 x 10 mm #1",
+   "part": "SP-RC",
+   "name": "Rear spar, centre (12x10 CF tube)",
+   "length_mm": 1208
+  },
+  {
+   "stock": "Pultruded/roll-wrapped carbon tube 12 x 10 mm #1",
+   "part": "LG-T",
+   "name": "Landing leg (12x10 CF tube)",
+   "length_mm": 285
+  },
+  {
+   "stock": "Pultruded/roll-wrapped carbon tube 12 x 10 mm #1",
+   "part": "LG-T",
+   "name": "Landing leg (12x10 CF tube)",
+   "length_mm": 285
+  },
+  {
+   "stock": "Pultruded/roll-wrapped carbon tube 12 x 10 mm #1",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 213
+  },
+  {
+   "stock": "Pultruded/roll-wrapped carbon tube 12 x 10 mm #2",
+   "part": "SP-RO",
+   "name": "Rear spar, outer panel (12x10 CF tube)",
+   "length_mm": 829
+  },
+  {
+   "stock": "Pultruded/roll-wrapped carbon tube 12 x 10 mm #2",
+   "part": "SP-RO",
+   "name": "Rear spar, outer panel (12x10 CF tube)",
+   "length_mm": 829
+  },
+  {
+   "stock": "Pultruded/roll-wrapped carbon tube 12 x 10 mm #2",
+   "part": "LG-TP",
+   "name": "Landing leg (port)",
+   "length_mm": 285
+  },
+  {
+   "stock": "Pultruded/roll-wrapped carbon tube 12 x 10 mm #2",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 48
+  },
+  {
+   "stock": "Pultruded/roll-wrapped carbon tube 12 x 10 mm #3",
+   "part": "LG-TP",
+   "name": "Landing leg (port)",
+   "length_mm": 285
+  },
+  {
+   "stock": "Pultruded/roll-wrapped carbon tube 12 x 10 mm #3",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 1712
+  },
+  {
+   "stock": "Pultruded carbon rod 10 mm #1",
+   "part": "SP-RJ",
+   "name": "Rear spar joiner (10 mm CF rod)",
+   "length_mm": 202
+  },
+  {
+   "stock": "Pultruded carbon rod 10 mm #1",
+   "part": "SP-RJ",
+   "name": "Rear spar joiner (10 mm CF rod)",
+   "length_mm": 202
+  },
+  {
+   "stock": "Pultruded carbon rod 10 mm #1",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 590
+  },
+  {
+   "stock": "Pultruded carbon rod 6 mm #1",
+   "part": "HS-SP",
+   "name": "Stabiliser spar (6 mm CF rod)",
+   "length_mm": 1206
+  },
+  {
+   "stock": "Pultruded carbon rod 6 mm #1",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 291
+  },
+  {
+   "stock": "Pultruded carbon rod 4 mm (torque rods, fin spars) #1",
+   "part": "AIL-ROD",
+   "name": "Aileron torque rod",
+   "length_mm": 452
+  },
+  {
+   "stock": "Pultruded carbon rod 4 mm (torque rods, fin spars) #1",
+   "part": "AIL-ROD",
+   "name": "Aileron torque rod",
+   "length_mm": 452
+  },
+  {
+   "stock": "Pultruded carbon rod 4 mm (torque rods, fin spars) #1",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 90
+  },
+  {
+   "stock": "Pultruded carbon rod 4 mm (torque rods, fin spars) #2",
+   "part": "FIN-SP",
+   "name": "Fin spar",
+   "length_mm": 220
+  },
+  {
+   "stock": "Pultruded carbon rod 4 mm (torque rods, fin spars) #2",
+   "part": "FIN-SP",
+   "name": "Fin spar",
+   "length_mm": 220
+  },
+  {
+   "stock": "Pultruded carbon rod 4 mm (torque rods, fin spars) #2",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 554
+  },
+  {
+   "stock": "Pultruded carbon rod 3 mm (elevator torque rod) #1",
+   "part": "ELV-ROD",
+   "name": "Elevator torque rod",
+   "length_mm": 1200
+  },
+  {
+   "stock": "Pultruded carbon rod 3 mm (elevator torque rod) #1",
+   "part": "(offcut)",
+   "name": "",
+   "length_mm": 297
+  }
+ ],
+ "made": [
+  {
+   "id": "W-R",
+   "name": "Wing root segment",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 74.7,
+   "size_mm": [
+    320.2,
+    240.0,
+    49.8
+   ],
+   "files": {
+    "step": "cad/parts/W-R/W-R.step",
+    "stl": "cad/parts/W-R/W-R.stl"
+   }
+  },
+  {
+   "id": "W-C",
+   "name": "Wing centre segment",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 4,
+   "mass_g_each": 78.6,
+   "size_mm": [
+    320.2,
+    238.5,
+    49.8
+   ],
+   "files": {
+    "step": "cad/parts/W-C/W-C.step",
+    "stl": "cad/parts/W-C/W-C.stl"
+   }
+  },
+  {
+   "id": "W-O",
+   "name": "Outer wing segment",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 4,
+   "mass_g_each": 67.8,
+   "size_mm": [
+    320.2,
+    204.2,
+    49.8
+   ],
+   "files": {
+    "step": "cad/parts/W-O/W-O.step",
+    "stl": "cad/parts/W-O/W-O.stl"
+   }
+  },
+  {
+   "id": "W-A1",
+   "name": "Aileron bay segment with servo pocket",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 2,
+   "mass_g_each": 57.0,
+   "size_mm": [
+    232.7,
+    204.2,
+    49.8
+   ],
+   "files": {
+    "step": "cad/parts/W-A1/W-A1.step",
+    "stl": "cad/parts/W-A1/W-A1.stl"
+   }
+  },
+  {
+   "id": "W-A2",
+   "name": "Aileron bay segment",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 2,
+   "mass_g_each": 57.2,
+   "size_mm": [
+    232.7,
+    204.2,
+    49.8
+   ],
+   "files": {
+    "step": "cad/parts/W-A2/W-A2.step",
+    "stl": "cad/parts/W-A2/W-A2.stl"
+   }
+  },
+  {
+   "id": "AIL",
+   "name": "Aileron segment",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 4,
+   "mass_g_each": 21.7,
+   "size_mm": [
+    86.0,
+    203.2,
+    26.9
+   ],
+   "files": {
+    "step": "cad/parts/AIL/AIL.step",
+    "stl": "cad/parts/AIL/AIL.stl"
+   }
+  },
+  {
+   "id": "W-T",
+   "name": "Wing tip, starboard",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 13.1,
+   "size_mm": [
+    324.4,
+    30.0,
+    49.8
+   ],
+   "files": {
+    "step": "cad/parts/W-T/W-T.step",
+    "stl": "cad/parts/W-T/W-T.stl"
+   }
+  },
+  {
+   "id": "W-TP",
+   "name": "Wing tip, port (mirror)",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 13.1,
+   "size_mm": [
+    324.4,
+    30.0,
+    49.8
+   ],
+   "files": {
+    "step": "cad/parts/W-TP/W-TP.step",
+    "stl": "cad/parts/W-TP/W-TP.stl"
+   }
+  },
+  {
+   "id": "RIB-B",
+   "name": "Boom rib (wing-boom load fitting)",
+   "process": "CNC",
+   "material": "6061-T6 aluminium",
+   "qty": 2,
+   "mass_g_each": 129.3,
+   "size_mm": [
+    316.2,
+    6.0,
+    61.4
+   ],
+   "files": {
+    "step": "cad/parts/RIB-B/RIB-B.step",
+    "stl": "cad/parts/RIB-B/RIB-B.stl"
+   }
+  },
+  {
+   "id": "SAD-U",
+   "name": "Boom saddle, upper half",
+   "process": "CNC",
+   "material": "6061-T6 aluminium",
+   "qty": 2,
+   "mass_g_each": 236.0,
+   "size_mm": [
+    150.0,
+    48.0,
+    26.0
+   ],
+   "files": {
+    "step": "cad/parts/SAD-U/SAD-U.step",
+    "stl": "cad/parts/SAD-U/SAD-U.stl"
+   }
+  },
+  {
+   "id": "SAD-L",
+   "name": "Boom saddle, lower cap",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 2,
+   "mass_g_each": 86.5,
+   "size_mm": [
+    150.0,
+    48.0,
+    20.0
+   ],
+   "files": {
+    "step": "cad/parts/SAD-L/SAD-L.step",
+    "stl": "cad/parts/SAD-L/SAD-L.stl"
+   }
+  },
+  {
+   "id": "BM-NC",
+   "name": "Boom nose cone",
+   "process": "FDM",
+   "material": "PETG",
+   "qty": 2,
+   "mass_g_each": 19.3,
+   "size_mm": [
+    45.0,
+    30.0,
+    30.0
+   ],
+   "files": {
+    "step": "cad/parts/BM-NC/BM-NC.step",
+    "stl": "cad/parts/BM-NC/BM-NC.stl"
+   }
+  },
+  {
+   "id": "NAC-U",
+   "name": "Lift motor nacelle, upper (motor pedestal)",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 8,
+   "mass_g_each": 52.6,
+   "size_mm": [
+    96.0,
+    60.0,
+    36.5
+   ],
+   "files": {
+    "step": "cad/parts/NAC-U/NAC-U.step",
+    "stl": "cad/parts/NAC-U/NAC-U.stl"
+   }
+  },
+  {
+   "id": "NAC-L",
+   "name": "Lift motor nacelle, lower (ESC pod)",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 8,
+   "mass_g_each": 34.2,
+   "size_mm": [
+    100.0,
+    47.0,
+    39.0
+   ],
+   "files": {
+    "step": "cad/parts/NAC-L/NAC-L.step",
+    "stl": "cad/parts/NAC-L/NAC-L.stl"
+   }
+  },
+  {
+   "id": "FUS-0",
+   "name": "Nose cone",
+   "process": "FDM",
+   "material": "PETG",
+   "qty": 1,
+   "mass_g_each": 138.1,
+   "size_mm": [
+    168.5,
+    240.0,
+    260.0
+   ],
+   "files": {
+    "step": "cad/parts/FUS-0/FUS-0.step",
+    "stl": "cad/parts/FUS-0/FUS-0.stl"
+   }
+  },
+  {
+   "id": "FUS-1",
+   "name": "Fuselage section 1 (avionics / hatch)",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 100.4,
+   "size_mm": [
+    197.0,
+    240.0,
+    260.0
+   ],
+   "files": {
+    "step": "cad/parts/FUS-1/FUS-1.step",
+    "stl": "cad/parts/FUS-1/FUS-1.stl"
+   }
+  },
+  {
+   "id": "FUS-2",
+   "name": "Fuselage section 2 (battery bay)",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 81.1,
+   "size_mm": [
+    129.5,
+    240.0,
+    260.0
+   ],
+   "files": {
+    "step": "cad/parts/FUS-2/FUS-2.step",
+    "stl": "cad/parts/FUS-2/FUS-2.stl"
+   }
+  },
+  {
+   "id": "FUS-3",
+   "name": "Fuselage section 3 (wing carry)",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 68.2,
+   "size_mm": [
+    105.0,
+    240.0,
+    260.0
+   ],
+   "files": {
+    "step": "cad/parts/FUS-3/FUS-3.step",
+    "stl": "cad/parts/FUS-3/FUS-3.stl"
+   }
+  },
+  {
+   "id": "FUS-4",
+   "name": "Fuselage section 4",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 129.0,
+   "size_mm": [
+    220.5,
+    240.0,
+    260.0
+   ],
+   "files": {
+    "step": "cad/parts/FUS-4/FUS-4.step",
+    "stl": "cad/parts/FUS-4/FUS-4.stl"
+   }
+  },
+  {
+   "id": "FUS-5",
+   "name": "Fuselage section 5 (tail taper)",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 108.2,
+   "size_mm": [
+    217.0,
+    239.9,
+    259.8
+   ],
+   "files": {
+    "step": "cad/parts/FUS-5/FUS-5.step",
+    "stl": "cad/parts/FUS-5/FUS-5.stl"
+   }
+  },
+  {
+   "id": "FUS-6",
+   "name": "Tail cone (pusher mount)",
+   "process": "FDM",
+   "material": "PETG-CF",
+   "qty": 1,
+   "mass_g_each": 124.7,
+   "size_mm": [
+    188.5,
+    164.5,
+    170.2
+   ],
+   "files": {
+    "step": "cad/parts/FUS-6/FUS-6.step",
+    "stl": "cad/parts/FUS-6/FUS-6.stl"
+   }
+  },
+  {
+   "id": "FUS-H",
+   "name": "Battery / avionics hatch",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 28.2,
+   "size_mm": [
+    160.0,
+    146.0,
+    16.5
+   ],
+   "files": {
+    "step": "cad/parts/FUS-H/FUS-H.step",
+    "stl": "cad/parts/FUS-H/FUS-H.stl"
+   }
+  },
+  {
+   "id": "BH-1",
+   "name": "Bulkhead 1 (avionics)",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 22.9,
+   "size_mm": [
+    3.0,
+    240.0,
+    260.0
+   ],
+   "files": {
+    "step": "cad/parts/BH-1/BH-1.step",
+    "stl": "cad/parts/BH-1/BH-1.stl"
+   }
+  },
+  {
+   "id": "BH-2",
+   "name": "Bulkhead 2 (battery fwd)",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 22.9,
+   "size_mm": [
+    3.0,
+    240.0,
+    260.0
+   ],
+   "files": {
+    "step": "cad/parts/BH-2/BH-2.step",
+    "stl": "cad/parts/BH-2/BH-2.stl"
+   }
+  },
+  {
+   "id": "BH-3",
+   "name": "Bulkhead 3 (main spar carry)",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 64.6,
+   "size_mm": [
+    6.0,
+    240.0,
+    284.3
+   ],
+   "files": {
+    "step": "cad/parts/BH-3/BH-3.step",
+    "stl": "cad/parts/BH-3/BH-3.stl"
+   }
+  },
+  {
+   "id": "BH-4",
+   "name": "Bulkhead 4 (rear spar carry)",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 63.4,
+   "size_mm": [
+    6.0,
+    240.0,
+    281.3
+   ],
+   "files": {
+    "step": "cad/parts/BH-4/BH-4.step",
+    "stl": "cad/parts/BH-4/BH-4.stl"
+   }
+  },
+  {
+   "id": "BH-5",
+   "name": "Bulkhead 5",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 22.9,
+   "size_mm": [
+    3.0,
+    240.0,
+    260.0
+   ],
+   "files": {
+    "step": "cad/parts/BH-5/BH-5.step",
+    "stl": "cad/parts/BH-5/BH-5.stl"
+   }
+  },
+  {
+   "id": "BH-6",
+   "name": "Bulkhead 6 (tail)",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 14.9,
+   "size_mm": [
+    3.0,
+    165.2,
+    170.9
+   ],
+   "files": {
+    "step": "cad/parts/BH-6/BH-6.step",
+    "stl": "cad/parts/BH-6/BH-6.stl"
+   }
+  },
+  {
+   "id": "SC-1",
+   "name": "Spar cap (main spar)",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 1,
+   "mass_g_each": 14.2,
+   "size_mm": [
+    18.0,
+    60.0,
+    20.0
+   ],
+   "files": {
+    "step": "cad/parts/SC-1/SC-1.step",
+    "stl": "cad/parts/SC-1/SC-1.stl"
+   }
+  },
+  {
+   "id": "SC-2",
+   "name": "Spar cap (rear spar)",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 1,
+   "mass_g_each": 10.3,
+   "size_mm": [
+    18.0,
+    60.0,
+    11.0
+   ],
+   "files": {
+    "step": "cad/parts/SC-2/SC-2.step",
+    "stl": "cad/parts/SC-2/SC-2.stl"
+   }
+  },
+  {
+   "id": "TRAY",
+   "name": "Battery tray",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 202.4,
+   "size_mm": [
+    660.0,
+    200.0,
+    3.0
+   ],
+   "files": {
+    "step": "cad/parts/TRAY/TRAY.step",
+    "stl": "cad/parts/TRAY/TRAY.stl"
+   }
+  },
+  {
+   "id": "DECK",
+   "name": "Avionics deck",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 61.6,
+   "size_mm": [
+    190.0,
+    180.0,
+    3.0
+   ],
+   "files": {
+    "step": "cad/parts/DECK/DECK.step",
+    "stl": "cad/parts/DECK/DECK.stl"
+   }
+  },
+  {
+   "id": "FW",
+   "name": "Pusher firewall plate",
+   "process": "CNC",
+   "material": "6061-T6 aluminium",
+   "qty": 1,
+   "mass_g_each": 53.6,
+   "size_mm": [
+    3.0,
+    94.0,
+    94.0
+   ],
+   "files": {
+    "step": "cad/parts/FW/FW.step",
+    "stl": "cad/parts/FW/FW.stl"
+   }
+  },
+  {
+   "id": "GPS-M",
+   "name": "GPS mast",
+   "process": "FDM",
+   "material": "PETG",
+   "qty": 1,
+   "mass_g_each": 13.9,
+   "size_mm": [
+    44.0,
+    44.0,
+    114.0
+   ],
+   "files": {
+    "step": "cad/parts/GPS-M/GPS-M.step",
+    "stl": "cad/parts/GPS-M/GPS-M.stl"
+   }
+  },
+  {
+   "id": "TB-S",
+   "name": "Tail block, starboard",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 1,
+   "mass_g_each": 122.4,
+   "size_mm": [
+    182.5,
+    60.0,
+    57.0
+   ],
+   "files": {
+    "step": "cad/parts/TB-S/TB-S.step",
+    "stl": "cad/parts/TB-S/TB-S.stl"
+   }
+  },
+  {
+   "id": "TB-P",
+   "name": "Tail block, port (mirror)",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 1,
+   "mass_g_each": 122.4,
+   "size_mm": [
+    182.5,
+    60.0,
+    57.0
+   ],
+   "files": {
+    "step": "cad/parts/TB-P/TB-P.step",
+    "stl": "cad/parts/TB-P/TB-P.stl"
+   }
+  },
+  {
+   "id": "HS",
+   "name": "Horizontal stabiliser segment",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 4,
+   "mass_g_each": 20.8,
+   "size_mm": [
+    70.7,
+    232.8,
+    11.0
+   ],
+   "files": {
+    "step": "cad/parts/HS/HS.step",
+    "stl": "cad/parts/HS/HS.stl"
+   }
+  },
+  {
+   "id": "HS-C",
+   "name": "Horizontal stabiliser centre (elevator servo)",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 20.6,
+   "size_mm": [
+    70.7,
+    232.8,
+    11.0
+   ],
+   "files": {
+    "step": "cad/parts/HS-C/HS-C.step",
+    "stl": "cad/parts/HS-C/HS-C.stl"
+   }
+  },
+  {
+   "id": "ELV",
+   "name": "Elevator segment",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 5,
+   "mass_g_each": 9.0,
+   "size_mm": [
+    38.0,
+    231.8,
+    7.5
+   ],
+   "files": {
+    "step": "cad/parts/ELV/ELV.step",
+    "stl": "cad/parts/ELV/ELV.stl"
+   }
+  },
+  {
+   "id": "FIN",
+   "name": "Vertical fin",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 2,
+   "mass_g_each": 28.7,
+   "size_mm": [
+    123.2,
+    17.0,
+    230.0
+   ],
+   "files": {
+    "step": "cad/parts/FIN/FIN.step",
+    "stl": "cad/parts/FIN/FIN.stl"
+   }
+  },
+  {
+   "id": "RUD",
+   "name": "Rudder",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 2,
+   "mass_g_each": 15.6,
+   "size_mm": [
+    59.4,
+    11.7,
+    230.0
+   ],
+   "files": {
+    "step": "cad/parts/RUD/RUD.step",
+    "stl": "cad/parts/RUD/RUD.stl"
+   }
+  },
+  {
+   "id": "LG-S",
+   "name": "Landing leg socket, starboard",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 2,
+   "mass_g_each": 23.7,
+   "size_mm": [
+    40.0,
+    39.0,
+    69.7
+   ],
+   "files": {
+    "step": "cad/parts/LG-S/LG-S.step",
+    "stl": "cad/parts/LG-S/LG-S.stl"
+   }
+  },
+  {
+   "id": "LG-P",
+   "name": "Landing leg socket, port (mirror)",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 2,
+   "mass_g_each": 23.7,
+   "size_mm": [
+    40.0,
+    39.0,
+    69.7
+   ],
+   "files": {
+    "step": "cad/parts/LG-P/LG-P.step",
+    "stl": "cad/parts/LG-P/LG-P.stl"
+   }
+  },
+  {
+   "id": "LG-F",
+   "name": "Landing foot",
+   "process": "FDM",
+   "material": "TPU 95A",
+   "qty": 2,
+   "mass_g_each": 14.7,
+   "size_mm": [
+    32.0,
+    32.0,
+    31.6
+   ],
+   "files": {
+    "step": "cad/parts/LG-F/LG-F.step",
+    "stl": "cad/parts/LG-F/LG-F.stl"
+   }
+  },
+  {
+   "id": "LG-FP",
+   "name": "Landing foot (port)",
+   "process": "FDM",
+   "material": "TPU 95A",
+   "qty": 2,
+   "mass_g_each": 14.7,
+   "size_mm": [
+    32.0,
+    32.0,
+    31.6
+   ],
+   "files": {
+    "step": "cad/parts/LG-FP/LG-FP.step",
+    "stl": "cad/parts/LG-FP/LG-FP.stl"
+   }
+  }
+ ],
+ "total_usd": 5200.51
+}

@@ -1,0 +1,5 @@
+.cache/
+__pycache__/
+*.pyc
+/analysis/cfd/**/processor*/
+/firmware/px4/*.bak

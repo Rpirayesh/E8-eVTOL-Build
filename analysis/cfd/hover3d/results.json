@@ -1,0 +1,62 @@
+{
+ "vertical_force_by_region_n": {
+  "fuselage": -2.719441296451613,
+  "wing": -12.269145663225808,
+  "tail": -1.3958431776129028,
+  "booms": -9.510208044516132,
+  "rotors": -16.70651398064516,
+  "gear": -0.7310104125806453
+ },
+ "band_n": {
+  "fuselage": [
+   -3.13769618,
+   -1.760215302
+  ],
+  "wing": [
+   -16.15406764,
+   -5.5208521
+  ],
+  "tail": [
+   -8.95305446,
+   23.3860072
+  ],
+  "booms": [
+   -10.4302973,
+   -7.46776688
+  ],
+  "rotors": [
+   -17.7315345,
+   -14.95360976
+  ],
+  "gear": [
+   -0.805321082,
+   -0.574326832
+  ]
+ },
+ "download_n": 43.33216257503226,
+ "download_fraction_of_thrust": 0.2784134087364106,
+ "rotor_thrust_total_n": 155.63963952633193,
+ "weight_n": 155.63963952633193,
+ "model": "uniform actuator disks (momentum sources, no swirl), steady k-omega SST, averaged over iterations 500-800",
+ "note": "uniform disks load the hub region, so nacelle/motor download is an upper bound; real rotors unload the hub",
+ "hover_sensitivity": {
+  "no download": {
+   "thrust_per_rotor_n": 19.45495494079149,
+   "hover_power_w": 1810.838025029079,
+   "thrust_to_weight": 2.0666850744381233,
+   "worst_rotor_out_frac": 0.7071363474030825
+  },
+  "10 % download": {
+   "thrust_per_rotor_n": 21.400450434870642,
+   "hover_power_w": 2074.1913354328644,
+   "thrust_to_weight": 1.8788046131255667,
+   "worst_rotor_out_frac": 0.7778499821433909
+  },
+  "CFD upper bound": {
+   "thrust_per_rotor_n": 24.871475262670522,
+   "hover_power_w": 2574.8736708066076,
+   "thrust_to_weight": 1.6166015314880373,
+   "worst_rotor_out_frac": 0.9040125883249893
+  }
+ }
+}

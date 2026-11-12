@@ -1,0 +1,6700 @@
+{
+ "parts": [
+  {
+   "id": "W-R",
+   "name": "Wing root segment",
+   "group": "Wing",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 74.7,
+   "size_mm": [
+    320.2,
+    240.0,
+    49.8
+   ],
+   "notes": "Carries the two bulkhead towers through lower-skin slots; bond to W-C with epoxy.",
+   "settings": {
+    "printer": "any FDM with >= 256 mm Z and 0.4 mm nozzle",
+    "material": "LW-PLA (foaming, ~230 C for ~50 % expansion)",
+    "walls": "1 perimeter (0.6 mm foamed skin is modelled)",
+    "infill": "0 % (internal ribs/webs are modelled)",
+    "layer": "0.25 mm",
+    "orientation": "stand on root rib (span vertical)",
+    "supports": "none"
+   },
+   "files": {
+    "step": "cad/parts/W-R/W-R.step",
+    "stl": "cad/parts/W-R/W-R.stl"
+   },
+   "glb": "models/W-R.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -120.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "W-C",
+   "name": "Wing centre segment",
+   "group": "Wing",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 4,
+   "mass_g_each": 78.6,
+   "size_mm": [
+    320.2,
+    238.5,
+    49.8
+   ],
+   "notes": "Four identical; slide on spars, bond to neighbours.",
+   "settings": {
+    "printer": "any FDM with >= 256 mm Z and 0.4 mm nozzle",
+    "material": "LW-PLA (foaming, ~230 C for ~50 % expansion)",
+    "walls": "1 perimeter (0.6 mm foamed skin is modelled)",
+    "infill": "0 % (internal ribs/webs are modelled)",
+    "layer": "0.25 mm",
+    "orientation": "stand on root rib (span vertical)",
+    "supports": "none"
+   },
+   "files": {
+    "step": "cad/parts/W-C/W-C.step",
+    "stl": "cad/parts/W-C/W-C.stl"
+   },
+   "glb": "models/W-C.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      120.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      358.5
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -358.5
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -597.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "W-O",
+   "name": "Outer wing segment",
+   "group": "Wing",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 4,
+   "mass_g_each": 67.8,
+   "size_mm": [
+    320.2,
+    204.2,
+    49.8
+   ],
+   "notes": "Outer panels are removable: spar joiners slide into the centre spars.",
+   "settings": {
+    "printer": "any FDM with >= 256 mm Z and 0.4 mm nozzle",
+    "material": "LW-PLA (foaming, ~230 C for ~50 % expansion)",
+    "walls": "1 perimeter (0.6 mm foamed skin is modelled)",
+    "infill": "0 % (internal ribs/webs are modelled)",
+    "layer": "0.25 mm",
+    "orientation": "stand on root rib (span vertical)",
+    "supports": "none"
+   },
+   "files": {
+    "step": "cad/parts/W-O/W-O.step",
+    "stl": "cad/parts/W-O/W-O.stl"
+   },
+   "glb": "models/W-O.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      603.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      807.25
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -807.25
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -1011.5
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "W-A1",
+   "name": "Aileron bay segment with servo pocket",
+   "group": "Wing",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 2,
+   "mass_g_each": 57.0,
+   "size_mm": [
+    232.7,
+    204.2,
+    49.8
+   ],
+   "notes": "Servo pocket opens on the lower skin.",
+   "settings": {
+    "printer": "any FDM with >= 256 mm Z and 0.4 mm nozzle",
+    "material": "LW-PLA (foaming, ~230 C for ~50 % expansion)",
+    "walls": "1 perimeter (0.6 mm foamed skin is modelled)",
+    "infill": "0 % (internal ribs/webs are modelled)",
+    "layer": "0.25 mm",
+    "orientation": "stand on root rib (span vertical)",
+    "supports": "none"
+   },
+   "files": {
+    "step": "cad/parts/W-A1/W-A1.step",
+    "stl": "cad/parts/W-A1/W-A1.stl"
+   },
+   "glb": "models/W-A1.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      1011.5
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -1215.75
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "W-A2",
+   "name": "Aileron bay segment",
+   "group": "Wing",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 2,
+   "mass_g_each": 57.2,
+   "size_mm": [
+    232.7,
+    204.2,
+    49.8
+   ],
+   "notes": "",
+   "settings": {
+    "printer": "any FDM with >= 256 mm Z and 0.4 mm nozzle",
+    "material": "LW-PLA (foaming, ~230 C for ~50 % expansion)",
+    "walls": "1 perimeter (0.6 mm foamed skin is modelled)",
+    "infill": "0 % (internal ribs/webs are modelled)",
+    "layer": "0.25 mm",
+    "orientation": "stand on root rib (span vertical)",
+    "supports": "none"
+   },
+   "files": {
+    "step": "cad/parts/W-A2/W-A2.step",
+    "stl": "cad/parts/W-A2/W-A2.stl"
+   },
+   "glb": "models/W-A2.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      1215.75
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -1420.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "AIL",
+   "name": "Aileron segment",
+   "group": "Wing",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 4,
+   "mass_g_each": 21.7,
+   "size_mm": [
+    86.0,
+    203.2,
+    26.9
+   ],
+   "notes": "Two per side bonded on a 4 mm carbon torque rod; tape or printed pin hinge on the upper surface. Horn on the inner piece.",
+   "settings": {
+    "printer": "any FDM with >= 256 mm Z and 0.4 mm nozzle",
+    "material": "LW-PLA (foaming, ~230 C for ~50 % expansion)",
+    "walls": "1 perimeter",
+    "infill": "0 % (internal ribs/webs are modelled)",
+    "layer": "0.25 mm",
+    "orientation": "stand on end",
+    "supports": "none"
+   },
+   "files": {
+    "step": "cad/parts/AIL/AIL.step",
+    "stl": "cad/parts/AIL/AIL.stl"
+   },
+   "glb": "models/AIL.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      1011.5
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      1215.75
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -1215.75
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -1420.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "W-T",
+   "name": "Wing tip, starboard",
+   "group": "Wing",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 13.1,
+   "size_mm": [
+    324.4,
+    30.0,
+    49.8
+   ],
+   "notes": "Printed hollow (slicer walls only).",
+   "settings": {
+    "printer": "any FDM",
+    "material": "LW-PLA",
+    "walls": "1 perimeter",
+    "infill": "0 %",
+    "layer": "0.25 mm",
+    "supports": "tree, under flanges",
+    "print_wall_mm": 0.6
+   },
+   "files": {
+    "step": "cad/parts/W-T/W-T.step",
+    "stl": "cad/parts/W-T/W-T.stl"
+   },
+   "glb": "models/W-T.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      1420.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "W-TP",
+   "name": "Wing tip, port (mirror)",
+   "group": "Wing",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 13.1,
+   "size_mm": [
+    324.4,
+    30.0,
+    49.8
+   ],
+   "notes": "Printed hollow (slicer walls only).",
+   "settings": {
+    "printer": "any FDM",
+    "material": "LW-PLA",
+    "walls": "1 perimeter",
+    "infill": "0 %",
+    "layer": "0.25 mm",
+    "supports": "tree, under flanges",
+    "print_wall_mm": 0.6
+   },
+   "files": {
+    "step": "cad/parts/W-TP/W-TP.step",
+    "stl": "cad/parts/W-TP/W-TP.stl"
+   },
+   "glb": "models/W-TP.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -1420.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "RIB-B",
+   "name": "Boom rib (wing-boom load fitting)",
+   "group": "Wing",
+   "process": "CNC",
+   "material": "6061-T6 aluminium",
+   "qty": 2,
+   "mass_g_each": 129.3,
+   "size_mm": [
+    316.2,
+    6.0,
+    61.4
+   ],
+   "notes": "2-D profile from 6 mm 6061-T6 plate: one setup, 6 mm flat end mill for the profile, 3 mm for windows, drill/ream spar bores to 20.05 / 10.05 mm.",
+   "settings": {
+    "machine": "3-axis CNC",
+    "stock": "6 mm 6061-T6 plate",
+    "setups": 1,
+    "tools": "6 mm 2-flute carbide (profile, 12000 rpm, 1000 mm/min, 1 mm DOC), 3 mm (windows)",
+    "workholding": "screwed to spoilboard through tab holes, onion-skin 0.3 mm"
+   },
+   "files": {
+    "step": "cad/parts/RIB-B/RIB-B.step",
+    "stl": "cad/parts/RIB-B/RIB-B.stl"
+   },
+   "glb": "models/RIB-B.glb",
+   "color": [
+    176,
+    182,
+    190,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      597.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -603.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "SP-MC",
+   "name": "Main spar, centre (30x27 CF tube)",
+   "group": "Wing",
+   "process": "COTS-cut",
+   "material": "Carbon fibre tube",
+   "qty": 1,
+   "mass_g_each": 251.1,
+   "size_mm": [
+    30.0,
+    1206.0,
+    30.0
+   ],
+   "notes": "Cut to 1206 mm.",
+   "settings": {
+    "cut": "1206 mm, fine-tooth saw or abrasive disc, wet; sand ends"
+   },
+   "files": {
+    "step": "cad/parts/SP-MC/SP-MC.step",
+    "stl": "cad/parts/SP-MC/SP-MC.stl"
+   },
+   "glb": "models/SP-MC.glb",
+   "color": [
+    28,
+    28,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "SP-RC",
+   "name": "Rear spar, centre (12x10 CF tube)",
+   "group": "Wing",
+   "process": "COTS-cut",
+   "material": "Carbon fibre tube",
+   "qty": 1,
+   "mass_g_each": 64.6,
+   "size_mm": [
+    12.0,
+    1206.0,
+    12.0
+   ],
+   "notes": "Cut to 1206 mm.",
+   "settings": {
+    "cut": "1206 mm, fine-tooth saw or abrasive disc, wet; sand ends"
+   },
+   "files": {
+    "step": "cad/parts/SP-RC/SP-RC.step",
+    "stl": "cad/parts/SP-RC/SP-RC.stl"
+   },
+   "glb": "models/SP-RC.glb",
+   "color": [
+    28,
+    28,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "SP-MO",
+   "name": "Main spar, outer panel (30x27 CF tube)",
+   "group": "Wing",
+   "process": "COTS-cut",
+   "material": "Carbon fibre tube",
+   "qty": 2,
+   "mass_g_each": 172.2,
+   "size_mm": [
+    30.0,
+    827.0,
+    30.0
+   ],
+   "notes": "Cut 2 to 827 mm.",
+   "settings": {
+    "cut": "827 mm x 2"
+   },
+   "files": {
+    "step": "cad/parts/SP-MO/SP-MO.step",
+    "stl": "cad/parts/SP-MO/SP-MO.stl"
+   },
+   "glb": "models/SP-MO.glb",
+   "color": [
+    28,
+    28,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      603.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -1430.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "SP-RO",
+   "name": "Rear spar, outer panel (12x10 CF tube)",
+   "group": "Wing",
+   "process": "COTS-cut",
+   "material": "Carbon fibre tube",
+   "qty": 2,
+   "mass_g_each": 44.3,
+   "size_mm": [
+    12.0,
+    827.0,
+    12.0
+   ],
+   "notes": "Cut 2 to 827 mm.",
+   "settings": {
+    "cut": "827 mm x 2"
+   },
+   "files": {
+    "step": "cad/parts/SP-RO/SP-RO.step",
+    "stl": "cad/parts/SP-RO/SP-RO.stl"
+   },
+   "glb": "models/SP-RO.glb",
+   "color": [
+    28,
+    28,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      603.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -1430.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "SP-MJ",
+   "name": "Main spar joiner (27x25 CF tube)",
+   "group": "Wing",
+   "process": "COTS-cut",
+   "material": "Carbon fibre tube",
+   "qty": 2,
+   "mass_g_each": 36.0,
+   "size_mm": [
+    26.9,
+    300.0,
+    26.9
+   ],
+   "notes": "Bonded into the centre spar, slip fit in the outer spar; retained by an M3 nylon bolt.",
+   "settings": {
+    "cut": "300 mm x 2"
+   },
+   "files": {
+    "step": "cad/parts/SP-MJ/SP-MJ.step",
+    "stl": "cad/parts/SP-MJ/SP-MJ.stl"
+   },
+   "glb": "models/SP-MJ.glb",
+   "color": [
+    28,
+    28,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      453.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -753.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "SP-RJ",
+   "name": "Rear spar joiner (10 mm CF rod)",
+   "group": "Wing",
+   "process": "COTS-cut",
+   "material": "Carbon fibre rod",
+   "qty": 2,
+   "mass_g_each": 23.9,
+   "size_mm": [
+    9.9,
+    200.0,
+    9.9
+   ],
+   "notes": "Bonded into the centre spar, slip fit in the outer spar; retained by an M3 nylon bolt.",
+   "settings": {
+    "cut": "200 mm x 2"
+   },
+   "files": {
+    "step": "cad/parts/SP-RJ/SP-RJ.step",
+    "stl": "cad/parts/SP-RJ/SP-RJ.stl"
+   },
+   "glb": "models/SP-RJ.glb",
+   "color": [
+    28,
+    28,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      503.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      0.02878470205318706
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -703.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      40.198863657861345
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "SAD-U",
+   "name": "Boom saddle, upper half",
+   "group": "Booms",
+   "process": "CNC",
+   "material": "6061-T6 aluminium",
+   "qty": 2,
+   "mass_g_each": 236.0,
+   "size_mm": [
+    150.0,
+    48.0,
+    26.0
+   ],
+   "notes": "Joins the boom halves (internal sleeve) and transfers boom loads into the boom rib via two M5 cross bolts.",
+   "settings": {
+    "machine": "3-axis CNC",
+    "stock": "6061-T6 bar 50 x 30 x 170 mm",
+    "setups": 2,
+    "ops": "Op1 face, profile, side pockets 6 mm end mill, drill M4/M5; Op2 flip, 12 mm ball-nose half-bore R15.1 along x (0.5 mm step-over), slot 6.2 mm with 6 mm end mill",
+    "tolerance": "half-bore R15.1 +0.05/-0; clamp gap 0.2 mm"
+   },
+   "files": {
+    "step": "cad/parts/SAD-U/SAD-U.step",
+    "stl": "cad/parts/SAD-U/SAD-U.stl"
+   },
+   "glb": "models/SAD-U.glb",
+   "color": [
+    176,
+    182,
+    190,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "SAD-L",
+   "name": "Boom saddle, lower cap",
+   "group": "Booms",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 2,
+   "mass_g_each": 86.5,
+   "size_mm": [
+    150.0,
+    48.0,
+    20.0
+   ],
+   "notes": "6 x M4 x 45 socket cap screws + washers + nyloc; torque 1.5 N m.",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "PA6-CF or PETG-CF, dried",
+    "walls": "5 perimeters",
+    "infill": "60 % gyroid",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted",
+    "orientation": "flat face down"
+   },
+   "files": {
+    "step": "cad/parts/SAD-L/SAD-L.step",
+    "stl": "cad/parts/SAD-L/SAD-L.stl"
+   },
+   "glb": "models/SAD-L.glb",
+   "color": [
+    45,
+    47,
+    52,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "BM-F",
+   "name": "Front boom (30x27 CF tube)",
+   "group": "Booms",
+   "process": "COTS-cut",
+   "material": "Carbon fibre tube",
+   "qty": 2,
+   "mass_g_each": 215.7,
+   "size_mm": [
+    1036.1,
+    30.0,
+    30.0
+   ],
+   "notes": "Cut to 1036 mm; drill 8 mm wire exits under each motor.",
+   "settings": {
+    "cut": "1036 mm x 2"
+   },
+   "files": {
+    "step": "cad/parts/BM-F/BM-F.step",
+    "stl": "cad/parts/BM-F/BM-F.stl"
+   },
+   "glb": "models/BM-F.glb",
+   "color": [
+    28,
+    28,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "BM-R",
+   "name": "Rear boom (30x27 CF tube)",
+   "group": "Booms",
+   "process": "COTS-cut",
+   "material": "Carbon fibre tube",
+   "qty": 2,
+   "mass_g_each": 297.6,
+   "size_mm": [
+    1429.4,
+    30.0,
+    30.0
+   ],
+   "notes": "Cut to 1429 mm.",
+   "settings": {
+    "cut": "1429 mm x 2"
+   },
+   "files": {
+    "step": "cad/parts/BM-R/BM-R.step",
+    "stl": "cad/parts/BM-R/BM-R.stl"
+   },
+   "glb": "models/BM-R.glb",
+   "color": [
+    28,
+    28,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "BM-S",
+   "name": "Boom joint sleeve (27x25 CF tube)",
+   "group": "Booms",
+   "process": "COTS-cut",
+   "material": "Carbon fibre tube",
+   "qty": 2,
+   "mass_g_each": 18.9,
+   "size_mm": [
+    150.0,
+    26.9,
+    26.9
+   ],
+   "notes": "Bonded into the rear boom, slip fit into the front boom inside the saddle.",
+   "settings": {
+    "cut": "150 mm x 2"
+   },
+   "files": {
+    "step": "cad/parts/BM-S/BM-S.step",
+    "stl": "cad/parts/BM-S/BM-S.stl"
+   },
+   "glb": "models/BM-S.glb",
+   "color": [
+    28,
+    28,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "BM-NC",
+   "name": "Boom nose cone",
+   "group": "Booms",
+   "process": "FDM",
+   "material": "PETG",
+   "qty": 2,
+   "mass_g_each": 19.3,
+   "size_mm": [
+    45.0,
+    30.0,
+    30.0
+   ],
+   "notes": "Press fit + CA.",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "PETG",
+    "walls": "5 perimeters",
+    "infill": "20 %",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted"
+   },
+   "files": {
+    "step": "cad/parts/BM-NC/BM-NC.step",
+    "stl": "cad/parts/BM-NC/BM-NC.stl"
+   },
+   "glb": "models/BM-NC.glb",
+   "color": [
+    70,
+    120,
+    200,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "NAC-U",
+   "name": "Lift motor nacelle, upper (motor pedestal)",
+   "group": "Propulsion",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 8,
+   "mass_g_each": 52.6,
+   "size_mm": [
+    96.0,
+    60.0,
+    36.5
+   ],
+   "notes": "Motor seat with radial slots for 4 x M3 on any 25-34 mm bolt circle: confirm against the delivered MN5008 before printing.",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "PA6-CF or PETG-CF, dried",
+    "walls": "5 perimeters",
+    "infill": "40 % gyroid",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted",
+    "orientation": "seat face down on the bed",
+    "inserts": "none (through bolts)"
+   },
+   "files": {
+    "step": "cad/parts/NAC-U/NAC-U.step",
+    "stl": "cad/parts/NAC-U/NAC-U.stl"
+   },
+   "glb": "models/NAC-U.glb",
+   "color": [
+    45,
+    47,
+    52,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -841.1
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -323.9
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      608.6
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1125.8
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -841.1
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -323.9
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      608.6
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1125.8
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "NAC-L",
+   "name": "Lift motor nacelle, lower (ESC pod)",
+   "group": "Propulsion",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 8,
+   "mass_g_each": 34.2,
+   "size_mm": [
+    100.0,
+    47.0,
+    39.0
+   ],
+   "notes": "Houses the FLAME 60A ESC in the rotor downwash; open aft end for cooling air.",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "PA6-CF or PETG-CF, dried",
+    "walls": "5 perimeters",
+    "infill": "40 % gyroid",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted",
+    "orientation": "split face down"
+   },
+   "files": {
+    "step": "cad/parts/NAC-L/NAC-L.step",
+    "stl": "cad/parts/NAC-L/NAC-L.stl"
+   },
+   "glb": "models/NAC-L.glb",
+   "color": [
+    45,
+    47,
+    52,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -841.1
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -323.9
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      608.6
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1125.8
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -841.1
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -323.9
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      608.6
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1125.8
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "FUS-0",
+   "name": "Nose cone",
+   "group": "Fuselage",
+   "process": "FDM",
+   "material": "PETG",
+   "qty": 1,
+   "mass_g_each": 138.1,
+   "size_mm": [
+    168.5,
+    240.0,
+    260.0
+   ],
+   "notes": "Bonded and bolted (8 x M3) to the plywood bulkheads at each joint.",
+   "settings": {
+    "printer": "any FDM",
+    "material": "PETG",
+    "walls": "2 perimeters (1.0 mm)",
+    "infill": "0 %",
+    "layer": "0.25 mm",
+    "supports": "tree, under flanges",
+    "orientation": "stand on the larger joint face"
+   },
+   "files": {
+    "step": "cad/parts/FUS-0/FUS-0.step",
+    "stl": "cad/parts/FUS-0/FUS-0.stl"
+   },
+   "glb": "models/FUS-0.glb",
+   "color": [
+    70,
+    120,
+    200,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "FUS-1",
+   "name": "Fuselage section 1 (avionics / hatch)",
+   "group": "Fuselage",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 100.4,
+   "size_mm": [
+    197.0,
+    240.0,
+    260.0
+   ],
+   "notes": "Bonded and bolted (8 x M3) to the plywood bulkheads at each joint.",
+   "settings": {
+    "printer": "any FDM",
+    "material": "LW-PLA (foamed)",
+    "walls": "2 perimeters (1.0 mm)",
+    "infill": "0 %",
+    "layer": "0.25 mm",
+    "supports": "tree, under flanges",
+    "orientation": "stand on the larger joint face"
+   },
+   "files": {
+    "step": "cad/parts/FUS-1/FUS-1.step",
+    "stl": "cad/parts/FUS-1/FUS-1.stl"
+   },
+   "glb": "models/FUS-1.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "FUS-2",
+   "name": "Fuselage section 2 (battery bay)",
+   "group": "Fuselage",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 81.1,
+   "size_mm": [
+    129.5,
+    240.0,
+    260.0
+   ],
+   "notes": "Bonded and bolted (8 x M3) to the plywood bulkheads at each joint.",
+   "settings": {
+    "printer": "any FDM",
+    "material": "LW-PLA (foamed)",
+    "walls": "2 perimeters (1.0 mm)",
+    "infill": "0 %",
+    "layer": "0.25 mm",
+    "supports": "tree, under flanges",
+    "orientation": "stand on the larger joint face"
+   },
+   "files": {
+    "step": "cad/parts/FUS-2/FUS-2.step",
+    "stl": "cad/parts/FUS-2/FUS-2.stl"
+   },
+   "glb": "models/FUS-2.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "FUS-3",
+   "name": "Fuselage section 3 (wing carry)",
+   "group": "Fuselage",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 68.2,
+   "size_mm": [
+    105.0,
+    240.0,
+    260.0
+   ],
+   "notes": "Bonded and bolted (8 x M3) to the plywood bulkheads at each joint.",
+   "settings": {
+    "printer": "any FDM",
+    "material": "LW-PLA (foamed)",
+    "walls": "2 perimeters (1.0 mm)",
+    "infill": "0 %",
+    "layer": "0.25 mm",
+    "supports": "tree, under flanges",
+    "orientation": "stand on the larger joint face"
+   },
+   "files": {
+    "step": "cad/parts/FUS-3/FUS-3.step",
+    "stl": "cad/parts/FUS-3/FUS-3.stl"
+   },
+   "glb": "models/FUS-3.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "FUS-4",
+   "name": "Fuselage section 4",
+   "group": "Fuselage",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 129.0,
+   "size_mm": [
+    220.5,
+    240.0,
+    260.0
+   ],
+   "notes": "Bonded and bolted (8 x M3) to the plywood bulkheads at each joint.",
+   "settings": {
+    "printer": "any FDM",
+    "material": "LW-PLA (foamed)",
+    "walls": "2 perimeters (1.0 mm)",
+    "infill": "0 %",
+    "layer": "0.25 mm",
+    "supports": "tree, under flanges",
+    "orientation": "stand on the larger joint face"
+   },
+   "files": {
+    "step": "cad/parts/FUS-4/FUS-4.step",
+    "stl": "cad/parts/FUS-4/FUS-4.stl"
+   },
+   "glb": "models/FUS-4.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "FUS-5",
+   "name": "Fuselage section 5 (tail taper)",
+   "group": "Fuselage",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 108.2,
+   "size_mm": [
+    217.0,
+    239.9,
+    259.8
+   ],
+   "notes": "Bonded and bolted (8 x M3) to the plywood bulkheads at each joint.",
+   "settings": {
+    "printer": "any FDM",
+    "material": "LW-PLA (foamed)",
+    "walls": "2 perimeters (1.0 mm)",
+    "infill": "0 %",
+    "layer": "0.25 mm",
+    "supports": "tree, under flanges",
+    "orientation": "stand on the larger joint face"
+   },
+   "files": {
+    "step": "cad/parts/FUS-5/FUS-5.step",
+    "stl": "cad/parts/FUS-5/FUS-5.stl"
+   },
+   "glb": "models/FUS-5.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "FUS-6",
+   "name": "Tail cone (pusher mount)",
+   "group": "Fuselage",
+   "process": "FDM",
+   "material": "PETG-CF",
+   "qty": 1,
+   "mass_g_each": 124.7,
+   "size_mm": [
+    188.5,
+    164.5,
+    170.2
+   ],
+   "notes": "Bonded and bolted (8 x M3) to the plywood bulkheads at each joint.",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "PETG-CF",
+    "walls": "3 perimeters",
+    "infill": "n/a (shell)",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted"
+   },
+   "files": {
+    "step": "cad/parts/FUS-6/FUS-6.step",
+    "stl": "cad/parts/FUS-6/FUS-6.stl"
+   },
+   "glb": "models/FUS-6.glb",
+   "color": [
+    55,
+    58,
+    64,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "FUS-H",
+   "name": "Battery / avionics hatch",
+   "group": "Fuselage",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 28.2,
+   "size_mm": [
+    160.0,
+    146.0,
+    16.5
+   ],
+   "notes": "Two magnets forward, printed tongue aft.",
+   "settings": {
+    "printer": "any FDM",
+    "material": "LW-PLA (fuselage) or PETG (nose/tail where impact-prone)",
+    "walls": "2 perimeters (1.0 mm)",
+    "infill": "0 %",
+    "layer": "0.25 mm",
+    "supports": "tree, under flanges"
+   },
+   "files": {
+    "step": "cad/parts/FUS-H/FUS-H.step",
+    "stl": "cad/parts/FUS-H/FUS-H.stl"
+   },
+   "glb": "models/FUS-H.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "BH-1",
+   "name": "Bulkhead 1 (avionics)",
+   "group": "Fuselage",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 22.9,
+   "size_mm": [
+    3.0,
+    240.0,
+    260.0
+   ],
+   "notes": "3 mm aircraft birch plywood ring frame.",
+   "settings": {
+    "machine": "3-axis CNC router",
+    "stock": "3 mm birch plywood (BS1088 / aircraft grade)",
+    "tools": "3.175 mm 2-flute upcut/downcut compression, 18000 rpm, 1500 mm/min",
+    "setups": 1,
+    "workholding": "vacuum or screws in waste, 0.3 mm tabs"
+   },
+   "files": {
+    "step": "cad/parts/BH-1/BH-1.step",
+    "stl": "cad/parts/BH-1/BH-1.stl"
+   },
+   "glb": "models/BH-1.glb",
+   "color": [
+    214,
+    178,
+    120,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "BH-2",
+   "name": "Bulkhead 2 (battery fwd)",
+   "group": "Fuselage",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 22.9,
+   "size_mm": [
+    3.0,
+    240.0,
+    260.0
+   ],
+   "notes": "3 mm aircraft birch plywood ring frame.",
+   "settings": {
+    "machine": "3-axis CNC router",
+    "stock": "3 mm birch plywood (BS1088 / aircraft grade)",
+    "tools": "3.175 mm 2-flute upcut/downcut compression, 18000 rpm, 1500 mm/min",
+    "setups": 1,
+    "workholding": "vacuum or screws in waste, 0.3 mm tabs"
+   },
+   "files": {
+    "step": "cad/parts/BH-2/BH-2.step",
+    "stl": "cad/parts/BH-2/BH-2.stl"
+   },
+   "glb": "models/BH-2.glb",
+   "color": [
+    214,
+    178,
+    120,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "BH-3",
+   "name": "Bulkhead 3 (main spar carry)",
+   "group": "Fuselage",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 83.8,
+   "size_mm": [
+    6.0,
+    240.0,
+    284.3
+   ],
+   "notes": "6 mm aircraft birch plywood ring frame. Carries the wing: spar sits in the cradle under a printed cap.",
+   "settings": {
+    "machine": "3-axis CNC router",
+    "stock": "6 mm birch plywood (BS1088 / aircraft grade)",
+    "tools": "3.175 mm 2-flute upcut/downcut compression, 18000 rpm, 1500 mm/min",
+    "setups": 1,
+    "workholding": "vacuum or screws in waste, 0.3 mm tabs"
+   },
+   "files": {
+    "step": "cad/parts/BH-3/BH-3.step",
+    "stl": "cad/parts/BH-3/BH-3.stl"
+   },
+   "glb": "models/BH-3.glb",
+   "color": [
+    214,
+    178,
+    120,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "BH-4",
+   "name": "Bulkhead 4 (rear spar carry)",
+   "group": "Fuselage",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 82.6,
+   "size_mm": [
+    6.0,
+    240.0,
+    281.3
+   ],
+   "notes": "6 mm aircraft birch plywood ring frame. Carries the wing: spar sits in the cradle under a printed cap.",
+   "settings": {
+    "machine": "3-axis CNC router",
+    "stock": "6 mm birch plywood (BS1088 / aircraft grade)",
+    "tools": "3.175 mm 2-flute upcut/downcut compression, 18000 rpm, 1500 mm/min",
+    "setups": 1,
+    "workholding": "vacuum or screws in waste, 0.3 mm tabs"
+   },
+   "files": {
+    "step": "cad/parts/BH-4/BH-4.step",
+    "stl": "cad/parts/BH-4/BH-4.stl"
+   },
+   "glb": "models/BH-4.glb",
+   "color": [
+    214,
+    178,
+    120,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "BH-5",
+   "name": "Bulkhead 5",
+   "group": "Fuselage",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 22.9,
+   "size_mm": [
+    3.0,
+    240.0,
+    260.0
+   ],
+   "notes": "3 mm aircraft birch plywood ring frame.",
+   "settings": {
+    "machine": "3-axis CNC router",
+    "stock": "3 mm birch plywood (BS1088 / aircraft grade)",
+    "tools": "3.175 mm 2-flute upcut/downcut compression, 18000 rpm, 1500 mm/min",
+    "setups": 1,
+    "workholding": "vacuum or screws in waste, 0.3 mm tabs"
+   },
+   "files": {
+    "step": "cad/parts/BH-5/BH-5.step",
+    "stl": "cad/parts/BH-5/BH-5.stl"
+   },
+   "glb": "models/BH-5.glb",
+   "color": [
+    214,
+    178,
+    120,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "BH-6",
+   "name": "Bulkhead 6 (tail)",
+   "group": "Fuselage",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 14.9,
+   "size_mm": [
+    3.0,
+    165.2,
+    170.9
+   ],
+   "notes": "3 mm aircraft birch plywood ring frame.",
+   "settings": {
+    "machine": "3-axis CNC router",
+    "stock": "3 mm birch plywood (BS1088 / aircraft grade)",
+    "tools": "3.175 mm 2-flute upcut/downcut compression, 18000 rpm, 1500 mm/min",
+    "setups": 1,
+    "workholding": "vacuum or screws in waste, 0.3 mm tabs"
+   },
+   "files": {
+    "step": "cad/parts/BH-6/BH-6.step",
+    "stl": "cad/parts/BH-6/BH-6.stl"
+   },
+   "glb": "models/BH-6.glb",
+   "color": [
+    214,
+    178,
+    120,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "SC-1",
+   "name": "Spar cap (main spar)",
+   "group": "Fuselage",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 1,
+   "mass_g_each": 14.2,
+   "size_mm": [
+    18.0,
+    60.0,
+    20.0
+   ],
+   "notes": "Clamps the spar into the bulkhead cradle; 2 x M4 into heat-set inserts in printed tower blocks.",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "PA6-CF or PETG-CF, dried",
+    "walls": "5 perimeters",
+    "infill": "40 % gyroid",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted"
+   },
+   "files": {
+    "step": "cad/parts/SC-1/SC-1.step",
+    "stl": "cad/parts/SC-1/SC-1.stl"
+   },
+   "glb": "models/SC-1.glb",
+   "color": [
+    45,
+    47,
+    52,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "SC-2",
+   "name": "Spar cap (rear spar)",
+   "group": "Fuselage",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 1,
+   "mass_g_each": 10.3,
+   "size_mm": [
+    18.0,
+    60.0,
+    11.0
+   ],
+   "notes": "Clamps the spar into the bulkhead cradle; 2 x M4 into heat-set inserts in printed tower blocks.",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "PA6-CF or PETG-CF, dried",
+    "walls": "5 perimeters",
+    "infill": "40 % gyroid",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted"
+   },
+   "files": {
+    "step": "cad/parts/SC-2/SC-2.step",
+    "stl": "cad/parts/SC-2/SC-2.stl"
+   },
+   "glb": "models/SC-2.glb",
+   "color": [
+    45,
+    47,
+    52,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "TRAY",
+   "name": "Battery tray",
+   "group": "Fuselage",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 202.4,
+   "size_mm": [
+    660.0,
+    200.0,
+    3.0
+   ],
+   "notes": "Carries four 6S packs (2 x 2) on velcro straps through the slots; rests on bulkhead rims.",
+   "settings": {
+    "machine": "3-axis CNC router",
+    "stock": "3 mm birch plywood",
+    "setups": 1
+   },
+   "files": {
+    "step": "cad/parts/TRAY/TRAY.step",
+    "stl": "cad/parts/TRAY/TRAY.stl"
+   },
+   "glb": "models/TRAY.glb",
+   "color": [
+    214,
+    178,
+    120,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "DECK",
+   "name": "Avionics deck",
+   "group": "Fuselage",
+   "process": "CNC",
+   "material": "Birch plywood",
+   "qty": 1,
+   "mass_g_each": 61.6,
+   "size_mm": [
+    190.0,
+    180.0,
+    3.0
+   ],
+   "notes": "Pixhawk on 4 vibration dampers; receiver, telemetry and power module.",
+   "settings": {
+    "machine": "3-axis CNC router",
+    "stock": "3 mm birch plywood"
+   },
+   "files": {
+    "step": "cad/parts/DECK/DECK.step",
+    "stl": "cad/parts/DECK/DECK.stl"
+   },
+   "glb": "models/DECK.glb",
+   "color": [
+    214,
+    178,
+    120,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "FW",
+   "name": "Pusher firewall plate",
+   "group": "Propulsion",
+   "process": "CNC",
+   "material": "6061-T6 aluminium",
+   "qty": 1,
+   "mass_g_each": 53.6,
+   "size_mm": [
+    3.0,
+    94.0,
+    94.0
+   ],
+   "notes": "Bolts to the tail-cone boss ring (4 x M3 inserts). Motor cross-mount bolts on any 25-38 mm pattern (drilled pattern of holes).",
+   "settings": {
+    "machine": "3-axis CNC",
+    "stock": "3 mm 6061-T6 plate",
+    "setups": 1
+   },
+   "files": {
+    "step": "cad/parts/FW/FW.step",
+    "stl": "cad/parts/FW/FW.stl"
+   },
+   "glb": "models/FW.glb",
+   "color": [
+    176,
+    182,
+    190,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "GPS-M",
+   "name": "GPS mast",
+   "group": "Fuselage",
+   "process": "FDM",
+   "material": "PETG",
+   "qty": 1,
+   "mass_g_each": 13.9,
+   "size_mm": [
+    44.0,
+    44.0,
+    114.0
+   ],
+   "notes": "Raises the GPS above the wing and away from the ESC fields.",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "PETG",
+    "walls": "5 perimeters",
+    "infill": "100 %",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted"
+   },
+   "files": {
+    "step": "cad/parts/GPS-M/GPS-M.step",
+    "stl": "cad/parts/GPS-M/GPS-M.stl"
+   },
+   "glb": "models/GPS-M.glb",
+   "color": [
+    70,
+    120,
+    200,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      150.85627696794575
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      69.83591080977644
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "TB-S",
+   "name": "Tail block, starboard",
+   "group": "Tail",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 1,
+   "mass_g_each": 122.4,
+   "size_mm": [
+    182.5,
+    60.0,
+    57.0
+   ],
+   "notes": "Slides over the boom end; 2 x M3 cross bolts. Stab and fin sockets bonded.",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "PA6-CF or PETG-CF, dried",
+    "walls": "5 perimeters",
+    "infill": "40 % gyroid",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted",
+    "orientation": "boom axis vertical"
+   },
+   "files": {
+    "step": "cad/parts/TB-S/TB-S.step",
+    "stl": "cad/parts/TB-S/TB-S.stl"
+   },
+   "glb": "models/TB-S.glb",
+   "color": [
+    45,
+    47,
+    52,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "TB-P",
+   "name": "Tail block, port (mirror)",
+   "group": "Tail",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 1,
+   "mass_g_each": 122.4,
+   "size_mm": [
+    182.5,
+    60.0,
+    57.0
+   ],
+   "notes": "",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "PA6-CF or PETG-CF, dried",
+    "walls": "5 perimeters",
+    "infill": "40 % gyroid",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted",
+    "orientation": "boom axis vertical"
+   },
+   "files": {
+    "step": "cad/parts/TB-P/TB-P.step",
+    "stl": "cad/parts/TB-P/TB-P.stl"
+   },
+   "glb": "models/TB-P.glb",
+   "color": [
+    45,
+    47,
+    52,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "HS",
+   "name": "Horizontal stabiliser segment",
+   "group": "Tail",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 4,
+   "mass_g_each": 20.8,
+   "size_mm": [
+    70.7,
+    232.8,
+    11.0
+   ],
+   "notes": "Threaded on a 6 mm CF rod spar (1170 mm).",
+   "settings": {
+    "printer": "any FDM with >= 256 mm Z and 0.4 mm nozzle",
+    "material": "LW-PLA (foaming, ~230 C for ~50 % expansion)",
+    "walls": "1 perimeter (0.6 mm foamed skin is modelled)",
+    "infill": "0 % (internal ribs/webs are modelled)",
+    "layer": "0.25 mm",
+    "orientation": "stand on root rib (span vertical)",
+    "supports": "none"
+   },
+   "files": {
+    "step": "cad/parts/HS/HS.step",
+    "stl": "cad/parts/HS/HS.stl"
+   },
+   "glb": "models/HS.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -582.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -349.2
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      116.40000000000009
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      349.20000000000005
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "HS-C",
+   "name": "Horizontal stabiliser centre (elevator servo)",
+   "group": "Tail",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 1,
+   "mass_g_each": 20.6,
+   "size_mm": [
+    70.7,
+    232.8,
+    11.0
+   ],
+   "notes": "Elevator servo pocket on the lower skin (servo partly protrudes into the stab; fair with tape).",
+   "settings": {
+    "printer": "any FDM with >= 256 mm Z and 0.4 mm nozzle",
+    "material": "LW-PLA (foaming, ~230 C for ~50 % expansion)",
+    "walls": "1 perimeter (0.6 mm foamed skin is modelled)",
+    "infill": "0 % (internal ribs/webs are modelled)",
+    "layer": "0.25 mm",
+    "orientation": "stand on root rib (span vertical)",
+    "supports": "none"
+   },
+   "files": {
+    "step": "cad/parts/HS-C/HS-C.step",
+    "stl": "cad/parts/HS-C/HS-C.stl"
+   },
+   "glb": "models/HS-C.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -116.39999999999998
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "ELV",
+   "name": "Elevator segment",
+   "group": "Tail",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 5,
+   "mass_g_each": 9.0,
+   "size_mm": [
+    38.0,
+    231.8,
+    7.5
+   ],
+   "notes": "Five segments on a 3 mm CF torque rod; horn on the centre piece.",
+   "settings": {
+    "printer": "any FDM with >= 256 mm Z and 0.4 mm nozzle",
+    "material": "LW-PLA (foaming, ~230 C for ~50 % expansion)",
+    "walls": "1 perimeter (0.6 mm foamed skin is modelled)",
+    "infill": "0 % (internal ribs/webs are modelled)",
+    "layer": "0.25 mm",
+    "orientation": "stand on root rib (span vertical)",
+    "supports": "none"
+   },
+   "files": {
+    "step": "cad/parts/ELV/ELV.step",
+    "stl": "cad/parts/ELV/ELV.stl"
+   },
+   "glb": "models/ELV.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -582.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -349.2
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -116.39999999999998
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      116.40000000000009
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      349.20000000000005
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "HS-SP",
+   "name": "Stabiliser spar (6 mm CF rod)",
+   "group": "Tail",
+   "process": "COTS-cut",
+   "material": "Carbon fibre rod",
+   "qty": 1,
+   "mass_g_each": 52.8,
+   "size_mm": [
+    6.0,
+    1204.0,
+    6.0
+   ],
+   "notes": "",
+   "settings": {
+    "cut": "1204 mm"
+   },
+   "files": {
+    "step": "cad/parts/HS-SP/HS-SP.step",
+    "stl": "cad/parts/HS-SP/HS-SP.stl"
+   },
+   "glb": "models/HS-SP.glb",
+   "color": [
+    28,
+    28,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -602.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "FIN",
+   "name": "Vertical fin",
+   "group": "Tail",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 2,
+   "mass_g_each": 28.7,
+   "size_mm": [
+    123.2,
+    17.0,
+    230.0
+   ],
+   "notes": "Printed hollow with 2 perimeters: 4 mm CF rod spar at 30 % chord; rudder servo at the root.",
+   "settings": {
+    "printer": "any FDM with >= 256 mm Z and 0.4 mm nozzle",
+    "material": "LW-PLA (foaming, ~230 C for ~50 % expansion)",
+    "walls": "2 perimeters",
+    "infill": "0 %",
+    "layer": "0.25 mm",
+    "orientation": "root down",
+    "supports": "none",
+    "print_wall_mm": 1.0
+   },
+   "files": {
+    "step": "cad/parts/FIN/FIN.step",
+    "stl": "cad/parts/FIN/FIN.stl"
+   },
+   "glb": "models/FIN.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      18.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      18.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "RUD",
+   "name": "Rudder",
+   "group": "Tail",
+   "process": "FDM",
+   "material": "LW-PLA (foamed)",
+   "qty": 2,
+   "mass_g_each": 15.6,
+   "size_mm": [
+    59.4,
+    11.7,
+    230.0
+   ],
+   "notes": "",
+   "settings": {
+    "printer": "any FDM with >= 256 mm Z and 0.4 mm nozzle",
+    "material": "LW-PLA (foaming, ~230 C for ~50 % expansion)",
+    "walls": "2 perimeters",
+    "infill": "0 % (internal ribs/webs are modelled)",
+    "layer": "0.25 mm",
+    "orientation": "root down",
+    "supports": "none",
+    "print_wall_mm": 1.0
+   },
+   "files": {
+    "step": "cad/parts/RUD/RUD.step",
+    "stl": "cad/parts/RUD/RUD.stl"
+   },
+   "glb": "models/RUD.glb",
+   "color": [
+    236,
+    238,
+    241,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      18.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1404.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      18.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "LG-S",
+   "name": "Landing leg socket, starboard",
+   "group": "Landing gear",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 2,
+   "mass_g_each": 23.7,
+   "size_mm": [
+    40.0,
+    39.0,
+    69.7
+   ],
+   "notes": "Clamped to the boom with 2 x M3; leg bonded with epoxy.",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "PA6-CF or PETG-CF, dried",
+    "walls": "5 perimeters",
+    "infill": "40 % gyroid",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted",
+    "orientation": "boom axis vertical"
+   },
+   "files": {
+    "step": "cad/parts/LG-S/LG-S.step",
+    "stl": "cad/parts/LG-S/LG-S.stl"
+   },
+   "glb": "models/LG-S.glb",
+   "color": [
+    45,
+    47,
+    52,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -150.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      420.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "LG-P",
+   "name": "Landing leg socket, port (mirror)",
+   "group": "Landing gear",
+   "process": "FDM",
+   "material": "PA6-CF",
+   "qty": 2,
+   "mass_g_each": 23.7,
+   "size_mm": [
+    40.0,
+    39.0,
+    69.7
+   ],
+   "notes": "",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "PA6-CF or PETG-CF, dried",
+    "walls": "5 perimeters",
+    "infill": "40 % gyroid",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted",
+    "orientation": "boom axis vertical"
+   },
+   "files": {
+    "step": "cad/parts/LG-P/LG-P.step",
+    "stl": "cad/parts/LG-P/LG-P.stl"
+   },
+   "glb": "models/LG-P.glb",
+   "color": [
+    45,
+    47,
+    52,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -150.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      420.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "LG-T",
+   "name": "Landing leg (12x10 CF tube)",
+   "group": "Landing gear",
+   "process": "COTS-cut",
+   "material": "Carbon fibre tube",
+   "qty": 2,
+   "mass_g_each": 15.4,
+   "size_mm": [
+    12.0,
+    61.4,
+    283.1
+   ],
+   "notes": "Cut 4 to 285 mm.",
+   "settings": {
+    "cut": "285 mm x 4"
+   },
+   "files": {
+    "step": "cad/parts/LG-T/LG-T.step",
+    "stl": "cad/parts/LG-T/LG-T.stl"
+   },
+   "glb": "models/LG-T.glb",
+   "color": [
+    28,
+    28,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -150.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      420.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "LG-F",
+   "name": "Landing foot",
+   "group": "Landing gear",
+   "process": "FDM",
+   "material": "TPU 95A",
+   "qty": 2,
+   "mass_g_each": 14.7,
+   "size_mm": [
+    32.0,
+    32.0,
+    31.6
+   ],
+   "notes": "Shock-absorbing foot; 3 walls, 25 % gyroid.",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "TPU 95A",
+    "walls": "3",
+    "infill": "25 % gyroid",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted"
+   },
+   "files": {
+    "step": "cad/parts/LG-F/LG-F.step",
+    "stl": "cad/parts/LG-F/LG-F.stl"
+   },
+   "glb": "models/LG-F.glb",
+   "color": [
+    230,
+    110,
+    40,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -150.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      420.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "LG-TP",
+   "name": "Landing leg (port)",
+   "group": "Landing gear",
+   "process": "COTS-cut",
+   "material": "Carbon fibre tube",
+   "qty": 2,
+   "mass_g_each": 15.4,
+   "size_mm": [
+    12.0,
+    61.4,
+    283.1
+   ],
+   "notes": "",
+   "settings": {
+    "cut": "same as LG-T"
+   },
+   "files": {
+    "step": "cad/parts/LG-TP/LG-TP.step",
+    "stl": "cad/parts/LG-TP/LG-TP.stl"
+   },
+   "glb": "models/LG-TP.glb",
+   "color": [
+    28,
+    28,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      -0.0,
+      0.0,
+      -150.0
+     ],
+     [
+      0.0,
+      1.0,
+      -0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      -0.0,
+      0.0,
+      420.0
+     ],
+     [
+      0.0,
+      1.0,
+      -0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "LG-FP",
+   "name": "Landing foot (port)",
+   "group": "Landing gear",
+   "process": "FDM",
+   "material": "TPU 95A",
+   "qty": 2,
+   "mass_g_each": 14.7,
+   "size_mm": [
+    32.0,
+    32.0,
+    31.6
+   ],
+   "notes": "",
+   "settings": {
+    "printer": "FDM with hardened nozzle",
+    "material": "TPU 95A",
+    "walls": "5 perimeters",
+    "infill": "40 % gyroid",
+    "layer": "0.2 mm",
+    "supports": "as needed",
+    "post": "heat-set M3 inserts where noted"
+   },
+   "files": {
+    "step": "cad/parts/LG-FP/LG-FP.step",
+    "stl": "cad/parts/LG-FP/LG-FP.stl"
+   },
+   "glb": "models/LG-FP.glb",
+   "color": [
+    230,
+    110,
+    40,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      -0.0,
+      0.0,
+      -150.0
+     ],
+     [
+      0.0,
+      1.0,
+      -0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      -0.0,
+      0.0,
+      420.0
+     ],
+     [
+      0.0,
+      1.0,
+      -0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": false
+  },
+  {
+   "id": "MOT-L",
+   "name": "T-Motor MN5008 KV170 lift motor",
+   "group": "Propulsion",
+   "process": "COTS",
+   "material": "purchased",
+   "qty": 8,
+   "mass_g_each": 135.0,
+   "size_mm": [
+    55.6,
+    55.6,
+    42.0
+   ],
+   "notes": "",
+   "settings": {},
+   "files": {},
+   "glb": "models/MOT-L.glb",
+   "color": [
+    150,
+    30,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -841.1
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      36.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -323.9
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      36.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      608.6
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      36.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1125.8
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      36.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -841.1
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      36.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -323.9
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      36.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      608.6
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      36.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1125.8
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      36.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "PROP-CW",
+   "name": "T-Motor P18x6.1 propeller (CW)",
+   "group": "Propulsion",
+   "process": "COTS",
+   "material": "purchased",
+   "qty": 4,
+   "mass_g_each": 26.0,
+   "size_mm": [
+    42.5,
+    450.3,
+    19.2
+   ],
+   "notes": "",
+   "settings": {},
+   "files": {},
+   "glb": "models/PROP-CW.glb",
+   "color": [
+    20,
+    20,
+    22,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -323.90425846646593
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      72.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1125.8
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      72.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -841.1042584664659
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      72.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      608.6
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      72.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "PROP-CCW",
+   "name": "T-Motor P18x6.1 propeller (CCW)",
+   "group": "Propulsion",
+   "process": "COTS",
+   "material": "purchased",
+   "qty": 4,
+   "mass_g_each": 26.0,
+   "size_mm": [
+    42.5,
+    450.3,
+    19.2
+   ],
+   "notes": "",
+   "settings": {},
+   "files": {},
+   "glb": "models/PROP-CCW.glb",
+   "color": [
+    20,
+    20,
+    22,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -841.1042584664659
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      72.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      608.6
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      72.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -323.90425846646593
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      72.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1125.8
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      72.5
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "ESC-L",
+   "name": "T-Motor FLAME 60A 12S ESC",
+   "group": "Propulsion",
+   "process": "COTS",
+   "material": "purchased",
+   "qty": 8,
+   "mass_g_each": 74.0,
+   "size_mm": [
+    70.0,
+    32.0,
+    15.0
+   ],
+   "notes": "",
+   "settings": {},
+   "files": {},
+   "glb": "models/ESC-L.glb",
+   "color": [
+    40,
+    80,
+    160,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -841.1
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -323.9
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      608.6
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1125.8
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -841.1
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -323.9
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      608.6
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1125.8
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "MOT-P",
+   "name": "T-Motor AT4130 KV230 pusher motor",
+   "group": "Propulsion",
+   "process": "COTS",
+   "material": "purchased",
+   "qty": 1,
+   "mass_g_each": 408.0,
+   "size_mm": [
+    109.0,
+    50.0,
+    50.0
+   ],
+   "notes": "",
+   "settings": {},
+   "files": {},
+   "glb": "models/MOT-P.glb",
+   "color": [
+    150,
+    30,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "PROP-P",
+   "name": "APC 17x10EP pusher propeller",
+   "group": "Propulsion",
+   "process": "COTS",
+   "material": "purchased",
+   "qty": 1,
+   "mass_g_each": 75.0,
+   "size_mm": [
+    24.8,
+    425.3,
+    48.3
+   ],
+   "notes": "",
+   "settings": {},
+   "files": {},
+   "glb": "models/PROP-P.glb",
+   "color": [
+    20,
+    20,
+    22,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "SPIN",
+   "name": "Pusher spinner (45 mm)",
+   "group": "Propulsion",
+   "process": "COTS",
+   "material": "purchased",
+   "qty": 1,
+   "mass_g_each": 12.0,
+   "size_mm": [
+    40.0,
+    42.0,
+    42.0
+   ],
+   "notes": "",
+   "settings": {},
+   "files": {},
+   "glb": "models/SPIN.glb",
+   "color": [
+    200,
+    200,
+    205,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "BAT",
+   "name": "Tattu 22000 mAh 6S LiPo",
+   "group": "Power",
+   "process": "COTS",
+   "material": "purchased",
+   "qty": 2,
+   "mass_g_each": 2430.0,
+   "size_mm": [
+    200.0,
+    91.0,
+    69.0
+   ],
+   "notes": "",
+   "settings": {},
+   "files": {},
+   "glb": "models/BAT.glb",
+   "color": [
+    240,
+    190,
+    40,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -116.50548486244976
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -46.5
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      -218.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -116.50548486244976
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      46.5
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      -218.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "FC",
+   "name": "Holybro Pixhawk 6X",
+   "group": "Avionics",
+   "process": "COTS",
+   "material": "purchased",
+   "qty": 1,
+   "mass_g_each": 105.0,
+   "size_mm": [
+    92.0,
+    51.0,
+    28.0
+   ],
+   "notes": "",
+   "settings": {},
+   "files": {},
+   "glb": "models/FC.glb",
+   "color": [
+    30,
+    30,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      -150.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      -79.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "GPS",
+   "name": "Holybro M10 GPS",
+   "group": "Avionics",
+   "process": "COTS",
+   "material": "purchased",
+   "qty": 1,
+   "mass_g_each": 32.0,
+   "size_mm": [
+    50.0,
+    50.0,
+    15.0
+   ],
+   "notes": "",
+   "settings": {},
+   "files": {},
+   "glb": "models/GPS.glb",
+   "color": [
+    30,
+    30,
+    30,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      153.84044907504324
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      183.79684585698996
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  },
+  {
+   "id": "SRV",
+   "name": "25 g metal-gear servo",
+   "group": "Avionics",
+   "process": "COTS",
+   "material": "purchased",
+   "qty": 5,
+   "mass_g_each": 25.0,
+   "size_mm": [
+    32.0,
+    12.0,
+    30.0
+   ],
+   "notes": "",
+   "settings": {},
+   "files": {},
+   "glb": "models/SRV.glb",
+   "color": [
+    30,
+    30,
+    120,
+    255
+   ],
+   "instances": [
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      149.76098401240694
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      1113.625
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      28.008360358864486
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      0.9996573249755573,
+      0.0,
+      0.02617694830787316,
+      149.76098401240694
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -1113.625
+     ],
+     [
+      -0.02617694830787316,
+      0.0,
+      0.9996573249755573,
+      28.008360358864486
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1440.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      -24.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1454.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      20.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ],
+    [
+     [
+      1.0,
+      0.0,
+      0.0,
+      1454.4
+     ],
+     [
+      0.0,
+      1.0,
+      0.0,
+      -600.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0,
+      20.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   ],
+   "purchased": true
+  }
+ ],
+ "mass": {
+  "cad_mass_kg": 14.202387119951535,
+  "cg_mm": [
+   143.98859188102645,
+   -0.34110080148500677,
+   -62.99425282697214
+  ],
+  "cg_target_mm": 142.34787076676702,
+  "sizing_mass_kg": 15.87082638070411,
+  "by_group_kg": {
+   "Wing": 2.1287999999999996,
+   "Booms": 1.7480000000000002,
+   "Propulsion": 3.123,
+   "Fuselage": 1.3302999999999998,
+   "Tail": 0.535,
+   "Landing gear": 0.2152,
+   "Power": 4.86,
+   "Avionics": 0.262
+  },
+  "note": "CAD mass excludes harness, connectors, fasteners, adhesive, receiver/telemetry/airspeed/power module and growth; those remain sizing allowances.",
+  "parts": [
+   {
+    "id": "W-R",
+    "name": "Wing root segment",
+    "qty": 1,
+    "mass_g_each": 74.7,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "W-C",
+    "name": "Wing centre segment",
+    "qty": 4,
+    "mass_g_each": 78.6,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "W-O",
+    "name": "Outer wing segment",
+    "qty": 4,
+    "mass_g_each": 67.8,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "W-A1",
+    "name": "Aileron bay segment with servo pocket",
+    "qty": 2,
+    "mass_g_each": 57.0,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "W-A2",
+    "name": "Aileron bay segment",
+    "qty": 2,
+    "mass_g_each": 57.2,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "AIL",
+    "name": "Aileron segment",
+    "qty": 4,
+    "mass_g_each": 21.7,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "W-T",
+    "name": "Wing tip, starboard",
+    "qty": 1,
+    "mass_g_each": 13.1,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "W-TP",
+    "name": "Wing tip, port (mirror)",
+    "qty": 1,
+    "mass_g_each": 13.1,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "RIB-B",
+    "name": "Boom rib (wing-boom load fitting)",
+    "qty": 2,
+    "mass_g_each": 129.3,
+    "process": "CNC",
+    "material": "6061-T6 aluminium"
+   },
+   {
+    "id": "SP-MC",
+    "name": "Main spar, centre (30x27 CF tube)",
+    "qty": 1,
+    "mass_g_each": 251.1,
+    "process": "COTS-cut",
+    "material": "Carbon fibre tube"
+   },
+   {
+    "id": "SP-RC",
+    "name": "Rear spar, centre (12x10 CF tube)",
+    "qty": 1,
+    "mass_g_each": 64.6,
+    "process": "COTS-cut",
+    "material": "Carbon fibre tube"
+   },
+   {
+    "id": "SP-MO",
+    "name": "Main spar, outer panel (30x27 CF tube)",
+    "qty": 2,
+    "mass_g_each": 172.2,
+    "process": "COTS-cut",
+    "material": "Carbon fibre tube"
+   },
+   {
+    "id": "SP-RO",
+    "name": "Rear spar, outer panel (12x10 CF tube)",
+    "qty": 2,
+    "mass_g_each": 44.3,
+    "process": "COTS-cut",
+    "material": "Carbon fibre tube"
+   },
+   {
+    "id": "SP-MJ",
+    "name": "Main spar joiner (27x25 CF tube)",
+    "qty": 2,
+    "mass_g_each": 36.0,
+    "process": "COTS-cut",
+    "material": "Carbon fibre tube"
+   },
+   {
+    "id": "SP-RJ",
+    "name": "Rear spar joiner (10 mm CF rod)",
+    "qty": 2,
+    "mass_g_each": 23.9,
+    "process": "COTS-cut",
+    "material": "Carbon fibre rod"
+   },
+   {
+    "id": "SAD-U",
+    "name": "Boom saddle, upper half",
+    "qty": 2,
+    "mass_g_each": 236.0,
+    "process": "CNC",
+    "material": "6061-T6 aluminium"
+   },
+   {
+    "id": "SAD-L",
+    "name": "Boom saddle, lower cap",
+    "qty": 2,
+    "mass_g_each": 86.5,
+    "process": "FDM",
+    "material": "PA6-CF"
+   },
+   {
+    "id": "BM-F",
+    "name": "Front boom (30x27 CF tube)",
+    "qty": 2,
+    "mass_g_each": 215.7,
+    "process": "COTS-cut",
+    "material": "Carbon fibre tube"
+   },
+   {
+    "id": "BM-R",
+    "name": "Rear boom (30x27 CF tube)",
+    "qty": 2,
+    "mass_g_each": 297.6,
+    "process": "COTS-cut",
+    "material": "Carbon fibre tube"
+   },
+   {
+    "id": "BM-S",
+    "name": "Boom joint sleeve (27x25 CF tube)",
+    "qty": 2,
+    "mass_g_each": 18.9,
+    "process": "COTS-cut",
+    "material": "Carbon fibre tube"
+   },
+   {
+    "id": "BM-NC",
+    "name": "Boom nose cone",
+    "qty": 2,
+    "mass_g_each": 19.3,
+    "process": "FDM",
+    "material": "PETG"
+   },
+   {
+    "id": "NAC-U",
+    "name": "Lift motor nacelle, upper (motor pedestal)",
+    "qty": 8,
+    "mass_g_each": 52.6,
+    "process": "FDM",
+    "material": "PA6-CF"
+   },
+   {
+    "id": "NAC-L",
+    "name": "Lift motor nacelle, lower (ESC pod)",
+    "qty": 8,
+    "mass_g_each": 34.2,
+    "process": "FDM",
+    "material": "PA6-CF"
+   },
+   {
+    "id": "FUS-0",
+    "name": "Nose cone",
+    "qty": 1,
+    "mass_g_each": 138.1,
+    "process": "FDM",
+    "material": "PETG"
+   },
+   {
+    "id": "FUS-1",
+    "name": "Fuselage section 1 (avionics / hatch)",
+    "qty": 1,
+    "mass_g_each": 100.4,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "FUS-2",
+    "name": "Fuselage section 2 (battery bay)",
+    "qty": 1,
+    "mass_g_each": 81.1,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "FUS-3",
+    "name": "Fuselage section 3 (wing carry)",
+    "qty": 1,
+    "mass_g_each": 68.2,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "FUS-4",
+    "name": "Fuselage section 4",
+    "qty": 1,
+    "mass_g_each": 129.0,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "FUS-5",
+    "name": "Fuselage section 5 (tail taper)",
+    "qty": 1,
+    "mass_g_each": 108.2,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "FUS-6",
+    "name": "Tail cone (pusher mount)",
+    "qty": 1,
+    "mass_g_each": 124.7,
+    "process": "FDM",
+    "material": "PETG-CF"
+   },
+   {
+    "id": "FUS-H",
+    "name": "Battery / avionics hatch",
+    "qty": 1,
+    "mass_g_each": 28.2,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "BH-1",
+    "name": "Bulkhead 1 (avionics)",
+    "qty": 1,
+    "mass_g_each": 22.9,
+    "process": "CNC",
+    "material": "Birch plywood"
+   },
+   {
+    "id": "BH-2",
+    "name": "Bulkhead 2 (battery fwd)",
+    "qty": 1,
+    "mass_g_each": 22.9,
+    "process": "CNC",
+    "material": "Birch plywood"
+   },
+   {
+    "id": "BH-3",
+    "name": "Bulkhead 3 (main spar carry)",
+    "qty": 1,
+    "mass_g_each": 83.8,
+    "process": "CNC",
+    "material": "Birch plywood"
+   },
+   {
+    "id": "BH-4",
+    "name": "Bulkhead 4 (rear spar carry)",
+    "qty": 1,
+    "mass_g_each": 82.6,
+    "process": "CNC",
+    "material": "Birch plywood"
+   },
+   {
+    "id": "BH-5",
+    "name": "Bulkhead 5",
+    "qty": 1,
+    "mass_g_each": 22.9,
+    "process": "CNC",
+    "material": "Birch plywood"
+   },
+   {
+    "id": "BH-6",
+    "name": "Bulkhead 6 (tail)",
+    "qty": 1,
+    "mass_g_each": 14.9,
+    "process": "CNC",
+    "material": "Birch plywood"
+   },
+   {
+    "id": "SC-1",
+    "name": "Spar cap (main spar)",
+    "qty": 1,
+    "mass_g_each": 14.2,
+    "process": "FDM",
+    "material": "PA6-CF"
+   },
+   {
+    "id": "SC-2",
+    "name": "Spar cap (rear spar)",
+    "qty": 1,
+    "mass_g_each": 10.3,
+    "process": "FDM",
+    "material": "PA6-CF"
+   },
+   {
+    "id": "TRAY",
+    "name": "Battery tray",
+    "qty": 1,
+    "mass_g_each": 202.4,
+    "process": "CNC",
+    "material": "Birch plywood"
+   },
+   {
+    "id": "DECK",
+    "name": "Avionics deck",
+    "qty": 1,
+    "mass_g_each": 61.6,
+    "process": "CNC",
+    "material": "Birch plywood"
+   },
+   {
+    "id": "FW",
+    "name": "Pusher firewall plate",
+    "qty": 1,
+    "mass_g_each": 53.6,
+    "process": "CNC",
+    "material": "6061-T6 aluminium"
+   },
+   {
+    "id": "GPS-M",
+    "name": "GPS mast",
+    "qty": 1,
+    "mass_g_each": 13.9,
+    "process": "FDM",
+    "material": "PETG"
+   },
+   {
+    "id": "TB-S",
+    "name": "Tail block, starboard",
+    "qty": 1,
+    "mass_g_each": 122.4,
+    "process": "FDM",
+    "material": "PA6-CF"
+   },
+   {
+    "id": "TB-P",
+    "name": "Tail block, port (mirror)",
+    "qty": 1,
+    "mass_g_each": 122.4,
+    "process": "FDM",
+    "material": "PA6-CF"
+   },
+   {
+    "id": "HS",
+    "name": "Horizontal stabiliser segment",
+    "qty": 4,
+    "mass_g_each": 20.8,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "HS-C",
+    "name": "Horizontal stabiliser centre (elevator servo)",
+    "qty": 1,
+    "mass_g_each": 20.6,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "ELV",
+    "name": "Elevator segment",
+    "qty": 5,
+    "mass_g_each": 9.0,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "HS-SP",
+    "name": "Stabiliser spar (6 mm CF rod)",
+    "qty": 1,
+    "mass_g_each": 52.8,
+    "process": "COTS-cut",
+    "material": "Carbon fibre rod"
+   },
+   {
+    "id": "FIN",
+    "name": "Vertical fin",
+    "qty": 2,
+    "mass_g_each": 28.7,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "RUD",
+    "name": "Rudder",
+    "qty": 2,
+    "mass_g_each": 15.6,
+    "process": "FDM",
+    "material": "LW-PLA (foamed)"
+   },
+   {
+    "id": "LG-S",
+    "name": "Landing leg socket, starboard",
+    "qty": 2,
+    "mass_g_each": 23.7,
+    "process": "FDM",
+    "material": "PA6-CF"
+   },
+   {
+    "id": "LG-P",
+    "name": "Landing leg socket, port (mirror)",
+    "qty": 2,
+    "mass_g_each": 23.7,
+    "process": "FDM",
+    "material": "PA6-CF"
+   },
+   {
+    "id": "LG-T",
+    "name": "Landing leg (12x10 CF tube)",
+    "qty": 2,
+    "mass_g_each": 15.4,
+    "process": "COTS-cut",
+    "material": "Carbon fibre tube"
+   },
+   {
+    "id": "LG-F",
+    "name": "Landing foot",
+    "qty": 2,
+    "mass_g_each": 14.7,
+    "process": "FDM",
+    "material": "TPU 95A"
+   },
+   {
+    "id": "LG-TP",
+    "name": "Landing leg (port)",
+    "qty": 2,
+    "mass_g_each": 15.4,
+    "process": "COTS-cut",
+    "material": "Carbon fibre tube"
+   },
+   {
+    "id": "LG-FP",
+    "name": "Landing foot (port)",
+    "qty": 2,
+    "mass_g_each": 14.7,
+    "process": "FDM",
+    "material": "TPU 95A"
+   },
+   {
+    "id": "MOT-L",
+    "name": "T-Motor MN5008 KV170 lift motor",
+    "qty": 8,
+    "mass_g_each": 135.0,
+    "process": "COTS",
+    "material": "purchased"
+   },
+   {
+    "id": "PROP-CW",
+    "name": "T-Motor P18x6.1 propeller (CW)",
+    "qty": 4,
+    "mass_g_each": 26.0,
+    "process": "COTS",
+    "material": "purchased"
+   },
+   {
+    "id": "PROP-CCW",
+    "name": "T-Motor P18x6.1 propeller (CCW)",
+    "qty": 4,
+    "mass_g_each": 26.0,
+    "process": "COTS",
+    "material": "purchased"
+   },
+   {
+    "id": "ESC-L",
+    "name": "T-Motor FLAME 60A 12S ESC",
+    "qty": 8,
+    "mass_g_each": 74.0,
+    "process": "COTS",
+    "material": "purchased"
+   },
+   {
+    "id": "MOT-P",
+    "name": "T-Motor AT4130 KV230 pusher motor",
+    "qty": 1,
+    "mass_g_each": 408.0,
+    "process": "COTS",
+    "material": "purchased"
+   },
+   {
+    "id": "PROP-P",
+    "name": "APC 17x10EP pusher propeller",
+    "qty": 1,
+    "mass_g_each": 75.0,
+    "process": "COTS",
+    "material": "purchased"
+   },
+   {
+    "id": "SPIN",
+    "name": "Pusher spinner (45 mm)",
+    "qty": 1,
+    "mass_g_each": 12.0,
+    "process": "COTS",
+    "material": "purchased"
+   },
+   {
+    "id": "BAT",
+    "name": "Tattu 22000 mAh 6S LiPo",
+    "qty": 2,
+    "mass_g_each": 2430.0,
+    "process": "COTS",
+    "material": "purchased"
+   },
+   {
+    "id": "FC",
+    "name": "Holybro Pixhawk 6X",
+    "qty": 1,
+    "mass_g_each": 105.0,
+    "process": "COTS",
+    "material": "purchased"
+   },
+   {
+    "id": "GPS",
+    "name": "Holybro M10 GPS",
+    "qty": 1,
+    "mass_g_each": 32.0,
+    "process": "COTS",
+    "material": "purchased"
+   },
+   {
+    "id": "SRV",
+    "name": "25 g metal-gear servo",
+    "qty": 5,
+    "mass_g_each": 25.0,
+    "process": "COTS",
+    "material": "purchased"
+   }
+  ]
+ },
+ "design": {
+  "span_m": 2.9,
+  "chord_m": 0.32,
+  "battery": "battery_22000",
+  "n_battery": 2,
+  "cruise_ms": 25.0,
+  "boom_y_m": 0.6,
+  "fuselage_len_m": 1.25,
+  "fuselage_w_m": 0.24,
+  "fuselage_h_m": 0.26,
+  "static_margin": 0.15,
+  "rotor_gap_m": 0.06,
+  "cd0_override": null
+ }
+}

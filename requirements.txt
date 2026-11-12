@@ -1,0 +1,10 @@
+build123d==0.13.0
+cadquery-ocp==8.0.1.1.0
+numpy==2.5.4
+scipy==1.18.1
+shapely==2.2.0
+trimesh==5.2.0
+matplotlib==3.11.2
+neuralfoil==0.3.3
+aerosandbox==4.2.10
+playwright==1.65.0
