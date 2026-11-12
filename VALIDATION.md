@@ -43,6 +43,16 @@ the transition model and NeuralFoil agree on the low drag bucket, the fully turb
 
 Cruise polar from the 3-D half-model (see analysis/cfd/cruise3d/results.json); mesh 767979 cells. CD0 = 0.0852, lift slope 0.0811 /deg, neutral point at x = 164 mm (CG 142 mm), static margin 7 % MAC.
 
+Mesh sensitivity (same case set-up, one more refinement level on all aircraft surfaces):
+
+| Mesh | Cells | CD at 0 deg | CL at 0 deg | CL at 8 deg | CD at 8 deg |
+| --- | --- | --- | --- | --- | --- |
+| baseline | 767,979 | 0.0862 | 0.420 | 0.858 | 0.1744 |
+| fine | 3,178,159 | 0.0806 | 0.396 | 1.114 | 0.1381 |
+
+The fine mesh lowers CD at 0 deg by 6.5 % and keeps the 8 deg flow attached (CL +30 %); the baseline-mesh polar is kept for sizing as the conservative choice, with its 8 deg point excluded from the fits.
+
+
 ![polar](docs/img/cfd3d_polar.png)
 ![drag](docs/img/cfd3d_drag_breakdown.png)
 

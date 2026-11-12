@@ -112,3 +112,17 @@ def post():
     cruise_post()
     if (WORK / "hover").exists():
         hover_post()
+
+
+def fine_post():
+    """Mesh sensitivity: the 0 and 8 deg cases on the finer mesh vs the baseline mesh."""
+    def pick(name):
+        c = read_coeffs(WORK / name)
+        return dict(CL=c["Cl"], CD=c["Cd"], Cm=c["CmPitch"], CL_std=c["Cl_std"], CD_std=c["Cd_std"])
+    cells = int((WORK / "mesh_fine" / "log.checkMesh").read_text().split("cells:")[1].split()[0])
+    res = dict(cells=cells, a0=pick("fine_a+0"), a8=pick("fine_a+8"), coarse_a0=pick("cruise_a+0"), coarse_a8=pick("cruise_a+8"),
+               coarse_cells=int((WORK / "mesh" / "log.checkMesh").read_text().split("cells:")[1].split()[0]))
+    res["dCD_a0_pct"] = 100 * (res["a0"]["CD"] / res["coarse_a0"]["CD"] - 1)
+    res["dCL_a8_pct"] = 100 * (res["a8"]["CL"] / res["coarse_a8"]["CL"] - 1)
+    (OUT / "fine_mesh.json").write_text(json.dumps(res, indent=1))
+    print(json.dumps(res, indent=1))

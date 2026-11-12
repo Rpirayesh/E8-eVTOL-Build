@@ -60,6 +60,9 @@ easy gain. Performance is therefore bracketed:
 With the conservative drag the pusher draws 43 A at 25 m/s (60 A peak rating): cruise at
 22-23 m/s if flight logs confirm the higher drag.
 
+A finer mesh (3,178,159 cells) gives CD = 0.0806 at 0 deg (coarse 0.0862) and CL = 1.114 at 8 deg (coarse 0.858).
+The flow at 8 deg stays attached and steady on the fine mesh (CL std 0.0012), so the separation seen on the baseline mesh was a resolution effect; the 6.5 % lower drag means the baseline-mesh range figures are conservative.
+
 **Hover download** (eight actuator disks): 43 N = 28 % of thrust as an upper
 bound (uniform disks load the hub; flight data of similar aircraft is typically 5-10 %). Even at the upper bound the
 thrust-to-weight is 1.62 and the worst rotor-out case loads the remaining rotors to

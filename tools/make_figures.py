@@ -149,7 +149,7 @@ def fig_copy():
 
 
 RESULTS = {"design/selected_design.json": "selected_design.json", "analysis/cfd/airfoil2d/naca0012_validation.json": "naca0012_validation.json",
-           "analysis/cfd/cruise3d/results.json": "cruise3d.json", "analysis/cfd/hover3d/results.json": "hover3d.json",
+           "analysis/cfd/cruise3d/results.json": "cruise3d.json", "analysis/cfd/cruise3d/fine_mesh.json": "cruise3d_fine_mesh.json", "analysis/cfd/hover3d/results.json": "hover3d.json",
            "analysis/fea/airframe/results.json": "airframe.json", "analysis/fea/parts/summary.json": "parts_fea.json",
            "analysis/fea/validation/validation.json": "validation.json", "analysis/propeller/results.json": "propeller.json",
            "fullscale/results/results.json": "fullscale.json"}

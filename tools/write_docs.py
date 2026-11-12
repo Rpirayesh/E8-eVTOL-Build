@@ -59,7 +59,9 @@ def cfd_section():
     fine = ""
     if FINE:
         fine = (f"\nA finer mesh ({FINE['cells']:,} cells) gives CD = {f(FINE['a0']['CD'], 4)} at 0 deg "
-                f"(coarse {f(FINE['coarse_a0']['CD'], 4)}) and CL = {f(FINE['a8']['CL'], 3)} at 8 deg (coarse {f(FINE['coarse_a8']['CL'], 3)}).\n")
+                f"(coarse {f(FINE['coarse_a0']['CD'], 4)}) and CL = {f(FINE['a8']['CL'], 3)} at 8 deg (coarse {f(FINE['coarse_a8']['CL'], 3)}).\n"
+                f"The flow at 8 deg stays attached and steady on the fine mesh (CL std {f(FINE['a8']['CL_std'], 4)}), so the separation seen on the baseline mesh "
+                f"was a resolution effect; the {f(-FINE['dCD_a0_pct'], 1)} % lower drag means the baseline-mesh range figures are conservative.\n")
     out = f"""Full-aircraft OpenFOAM (k-omega SST, {C3D['mesh_cells']:,}-cell half model, lift rotors stopped):
 **CD0 = {f(C3D['cd0_full_aircraft'], 4)}**, Oswald e = {f(C3D['oswald_e'], 2)}, lift slope {f(C3D['cl_alpha_per_deg'], 3)} /deg,
 neutral point {f(C3D['x_neutral_point_m'] * 1000, 0)} mm behind the leading edge -> **static margin {f(100 * C3D['static_margin'], 1)} % MAC**
@@ -252,6 +254,17 @@ def manufacturing():
     (ROOT / "MANUFACTURING.md").write_text("".join(out))
 
 
+def fine_table():
+    if not FINE:
+        return ""
+    return "Mesh sensitivity (same case set-up, one more refinement level on all aircraft surfaces):\n\n" + md_table(
+        ["Mesh", "Cells", "CD at 0 deg", "CL at 0 deg", "CL at 8 deg", "CD at 8 deg"],
+        [["baseline", f"{FINE['coarse_cells']:,}", f(FINE['coarse_a0']['CD'], 4), f(FINE['coarse_a0']['CL'], 3), f(FINE['coarse_a8']['CL'], 3), f(FINE['coarse_a8']['CD'], 4)],
+         ["fine", f"{FINE['cells']:,}", f(FINE['a0']['CD'], 4), f(FINE['a0']['CL'], 3), f(FINE['a8']['CL'], 3), f(FINE['a8']['CD'], 4)]]) + (
+        f"\nThe fine mesh lowers CD at 0 deg by {f(-FINE['dCD_a0_pct'], 1)} % and keeps the 8 deg flow attached (CL +{f(FINE['dCL_a8_pct'], 0)} %); "
+        "the baseline-mesh polar is kept for sizing as the conservative choice, with its 8 deg point excluded from the fits.\n")
+
+
 def validation():
     v1 = VAL["V1"]["mesh_study"]
     of = [r for r in CFD0012["openfoam"] if "Cl" in r]
@@ -291,6 +304,8 @@ the transition model and NeuralFoil agree on the low drag bucket, the fully turb
 ### Full aircraft
 
 {"Cruise polar from the 3-D half-model (see analysis/cfd/cruise3d/results.json); mesh " + str(C3D.get('mesh_cells')) + " cells. CD0 = " + f(C3D['cd0_full_aircraft'], 4) + ", lift slope " + f(C3D['cl_alpha_per_deg'], 4) + " /deg, neutral point at x = " + f(C3D['x_neutral_point_m'] * 1000, 0) + " mm (CG " + f(C3D['x_cg_m'] * 1000, 0) + " mm), static margin " + f(100 * C3D['static_margin'], 0) + " % MAC." if C3D else "Pending."}
+
+{fine_table()}
 
 ![polar](docs/img/cfd3d_polar.png)
 ![drag](docs/img/cfd3d_drag_breakdown.png)
